@@ -13,140 +13,151 @@ import { SketchfabViewer } from "@/components/sketchfab-viewer"
 
 // Mock project data - in real app, this would come from a database or CMS
 const projectsData = {
-  "ecommerce-platform": {
-    title: "E-Commerce Platform",
-    subtitle: "Full-featured online store with modern design",
+  "go-explore": {
+    title: "Go Explore",
+    subtitle: "Aplikasi Booking Destinasi Daerah Surabaya",
     description:
-      "A comprehensive e-commerce solution built with React and Node.js, featuring a responsive design, secure payment processing, inventory management, and an intuitive admin dashboard. The platform supports multiple payment methods, real-time inventory tracking, and provides detailed analytics for business insights.",
+      "Sebuah platform booking destinasi wisata yang berfokus pada kota Surabaya. Aplikasi ini memudahkan pengguna untuk menemukan, menjelajahi, dan memesan berbagai destinasi populer seperti taman kota, museum, wisata kuliner, hingga acara lokal. Dengan antarmuka yang modern dan intuitif, aplikasi ini dirancang untuk memberikan pengalaman pemesanan yang cepat, aman, dan nyaman bagi wisatawan lokal maupun mancanegara.",
     longDescription:
-      "This e-commerce platform was designed to provide a seamless shopping experience for both customers and administrators. The frontend is built with React and styled with Tailwind CSS for a modern, responsive design. The backend utilizes Node.js with Express and MongoDB for robust data management. Key features include user authentication, shopping cart functionality, order management, payment integration with Stripe, and comprehensive admin tools for product and order management.",
-    technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Stripe API", "JWT"],
+      "Aplikasi booking destinasi Surabaya ini dirancang untuk mendukung pariwisata lokal dengan menghadirkan kemudahan akses informasi dan reservasi. Pengguna dapat melihat detail setiap destinasi, mulai dari harga tiket, jam operasional, lokasi di peta, hingga ulasan dari pengunjung lain. Sistem ini dibangun menggunakan React untuk frontend dengan desain responsif dan ramah pengguna, serta Node.js dan MongoDB pada backend untuk pengelolaan data yang efisien. Fitur utama meliputi pencarian destinasi berdasarkan kategori (alam, budaya, kuliner), pemesanan tiket online dengan integrasi pembayaran, serta dashboard admin untuk mengelola data destinasi dan pesanan. Aplikasi ini dioptimalkan agar mendukung perangkat mobile sehingga wisatawan dapat dengan mudah melakukan booking kapan saja dan di mana saja.",
+    technologies: ["Laravel", "MySQL", "Tailwind CSS", "Midtrans"],
     category: "Web Development",
-    client: "Fashion Forward Inc.",
+    client: "Ujian Akhir Semester 3",
     duration: "3 months",
     year: "2024",
     status: "Completed",
-    liveUrl: "https://example-store.com",
-    githubUrl: "https://github.com/alexjohnson/ecommerce-platform",
+    liveUrl: "https://github.com/Ahmadlazim-03/GoExplore-App",
+    githubUrl: "https://github.com/Ahmadlazim-03/GoExplore-App",
     images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
+      "/images/goexplore1.png?height=600&width=800",
+      "/images/goexplore2.png?height=400&width=600",
+      "/images/goexplore3.png?height=400&width=600",
+      "/images/goexplore4.png?height=400&width=600",
     ],
     features: [
-      "Responsive Design",
-      "Payment Gateway Integration",
-      "Admin Dashboard",
-      "Inventory Management",
-      "User Authentication",
-      "Order Tracking",
-      "SEO Optimized",
-      "Mobile Responsive",
+      "Destinasi Wisata Surabaya Lengkap",
+      "Pencarian & Filter Berdasarkan Kategori (alam, budaya, kuliner, event)",
+      "Booking & Pembelian Tiket Online",
+      "Integrasi Payment Gateway",
+      "Peta Lokasi & Navigasi Destinasi",
+      "Ulasan & Rating Pengunjung",
+      "Rekomendasi Destinasi Populer",
+      "Notifikasi & Reminder Jadwal Kunjungan",
+      "Dashboard Admin untuk Pengelolaan Destinasi & Pemesanan",
+      "Desain Responsif (Mobile & Desktop)"
     ],
     challenges: [
-      "Implementing secure payment processing",
-      "Optimizing performance for large product catalogs",
-      "Creating an intuitive admin interface",
-      "Ensuring mobile responsiveness across devices",
+      "First time experience menggunakan Midtrans sebagai payment gateway",
+      "Sedikit mendapatkan struggle dalam manage kerja tim",
     ],
     solutions: [
-      "Integrated Stripe for secure payment processing with PCI compliance",
-      "Implemented lazy loading and pagination for better performance",
-      "Designed a user-friendly admin dashboard with data visualization",
-      "Used responsive design principles and tested across multiple devices",
-    ],
-    sketchfabModel: "74b953299a0a4219a92539c995a79a82",
+      "Mengintegrasikan payment gateway lokal untuk memudahkan transaksi tiket secara aman",
+      "Menggunakan pencarian berbasis kategori dan filter untuk mempermudah pengguna menemukan destinasi sesuai minat",
+      "Menyediakan peta interaktif dengan integrasi Google Maps untuk navigasi yang akurat",
+      "Membangun sistem ulasan dan rating agar pengguna dapat berbagi pengalaman serta membantu calon pengunjung lain",
+      "Menerapkan sistem notifikasi untuk mengingatkan jadwal kunjungan dan promo destinasi",
+      "Mengembangkan dashboard admin dengan fitur CRUD untuk destinasi, tiket, dan pemesanan",
+      "Mengoptimalkan desain responsif dengan Tailwind CSS agar dapat digunakan di berbagai perangkat"
+    ]
   },
-  "task-management-app": {
-    title: "Task Management App",
-    subtitle: "Collaborative project management with real-time updates",
-    description:
-      "A modern task management application built with Next.js and TypeScript, featuring real-time collaboration, file sharing, and team management capabilities. The app includes drag-and-drop functionality, deadline tracking, and comprehensive project analytics.",
-    longDescription:
-      "This task management application was developed to streamline team collaboration and project tracking. Built with Next.js and TypeScript for type safety and performance, the app features real-time updates using WebSocket connections. The interface is designed with user experience in mind, featuring intuitive drag-and-drop functionality for task organization and a clean, modern design that works seamlessly across devices.",
-    technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Socket.io", "Tailwind CSS", "NextAuth"],
-    category: "Web Application",
-    client: "TechStart Solutions",
-    duration: "4 months",
-    year: "2024",
-    status: "Completed",
-    liveUrl: "https://taskmanager-demo.com",
-    githubUrl: "https://github.com/alexjohnson/task-manager",
-    images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
+
+
+  "go-orbit": {
+    "title": "Website Perusahaan Go-orbit",
+    "subtitle": "Platform Digital untuk Layanan Pelatihan dan Konsultasi",
+    "description": "Website resmi untuk Go-orbit yang menampilkan profil perusahaan dan ragam layanan profesional seperti pelatihan, pembinaan, dan konsultasi untuk pengembangan sumber daya manusia dan korporasi.",
+    "longDescription": "Proyek ini bertujuan untuk membangun kehadiran digital yang kuat bagi Go-orbit. Website ini dirancang sebagai pusat informasi utama bagi calon klien, menyediakan detail lengkap mengenai program pelatihan, layanan konsultasi, dan acara yang diselenggarakan. Dengan navigasi yang mudah dan desain yang profesional, situs ini memfasilitasi calon klien dalam memahami keunggulan layanan Go-orbit dan memudahkan mereka untuk menghubungi tim untuk konsultasi lebih lanjut. Website ini juga berfungsi sebagai galeri portofolio yang menampilkan berbagai kegiatan dan testimoni dari klien sebelumnya untuk membangun kepercayaan dan kredibilitas.",
+    "technologies": [
+      "Cromwell",
+      "Next.js",
+      "Typescript",
+      "Tailwind CSS",
+      "MySQL"
     ],
-    features: [
-      "Real-time Collaboration",
-      "Drag & Drop Interface",
-      "File Sharing",
-      "Team Management",
-      "Deadline Tracking",
-      "Project Analytics",
-      "Mobile Responsive",
-      "Dark Mode Support",
+    "category": "Web Development",
+    "client": "Go-orbit",
+    "duration": "3 Bulan",
+    "year": "2024",
+    "status": "Selesai",
+    "liveUrl": "https://www.go-orbit.id/",
+    "githubUrl": null,
+    "images": [
+      "/images/goorbit1.png?height=600&width=800",
+      "/images/goorbit2.png?height=400&width=600",
+      "/images/goorbit3.png?height=400&width=600",
+      "/images/goorbit4.png?height=400&width=600"
     ],
-    challenges: [
-      "Implementing real-time synchronization",
-      "Creating smooth drag-and-drop interactions",
-      "Managing complex state across components",
-      "Ensuring data consistency across users",
+    "features": [
+      "Desain Profesional dan Responsif",
+      "Halaman Profil Perusahaan (Tentang Kami)",
+      "Katalog Layanan (Pelatihan, Konsultasi, Outbound)",
+      "Galeri Dokumentasi Kegiatan",
+      "Formulir Kontak dan Informasi Lokasi",
+      "Area Testimoni Klien",
+      "Integrasi Media Sosial",
+      "Struktur SEO-Friendly"
     ],
-    solutions: [
-      "Used Socket.io for real-time communication between clients",
-      "Implemented React DnD library for smooth drag-and-drop experience",
-      "Utilized Zustand for efficient state management",
-      "Implemented optimistic updates with rollback functionality",
+    "challenges": [
+      "Menerjemahkan visi dan nilai perusahaan Go-orbit ke dalam desain visual yang menarik.",
+      "Menyusun struktur informasi layanan yang kompleks agar mudah dipahami oleh pengunjung.",
+      "Memastikan website memiliki performa yang cepat dan optimal di berbagai perangkat.",
+      "Penyesuain dan adaptasi dengan framework Cromwell CMS"
     ],
-    sketchfabModel: "a895a5e3a5124b9594495967110c794f",
+    "solutions": [
+      "Melakukan sesi diskusi intensif dengan klien untuk memahami brand identity dan menerapkannya pada UI/UX website.",
+      "Membuat arsitektur informasi yang logis dengan navigasi yang intuitif untuk setiap kategori layanan.",
+      "Mengimplementasikan teknik optimasi aset (gambar dan kode) untuk mempercepat waktu muat halaman.",
+      "Menyediakan halaman galeri dan testimoni untuk membangun bukti sosial (social proof) dan kepercayaan calon klien."
+    ]
   },
-  "healthcare-dashboard": {
-    title: "Healthcare Dashboard",
-    subtitle: "Comprehensive patient management system",
-    description:
-      "A secure healthcare management system built with React and Python, featuring patient records, appointment scheduling, and analytics dashboard. The system is HIPAA compliant and includes role-based access control.",
-    longDescription:
-      "This healthcare dashboard was developed to digitize and streamline healthcare operations. The system provides comprehensive patient management, appointment scheduling, and detailed analytics for healthcare providers. Built with security as a top priority, the application implements HIPAA compliance measures and role-based access control to ensure patient data privacy and security.",
-    technologies: ["React", "Python", "Django", "PostgreSQL", "Redis", "Chart.js", "Material-UI"],
-    category: "Healthcare Technology",
-    client: "MedCare Clinic",
-    duration: "6 months",
-    year: "2023",
-    status: "Completed",
-    liveUrl: "https://healthcare-demo.com",
-    githubUrl: "https://github.com/alexjohnson/healthcare-dashboard",
-    images: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
+
+
+   "danusin": {
+    "title": "Danusin",
+    "subtitle": "Aplikasi Pelacakan Peta untuk Kegiatan Dana Usaha",
+    "description": "Sebuah aplikasi berbasis peta yang dirancang untuk membantu koordinator dan penjual dalam kegiatan dana usaha (danus). Aplikasi ini memungkinkan pelacakan lokasi penjual secara real-time, memudahkan pembeli menemukan penjual terdekat, dan membantu koordinator memantau penyebaran tim di lapangan.",
+    "longDescription": "Danusin dikembangkan sebagai solusi untuk tantangan logistik dalam kegiatan dana usaha, di mana penjual seringkali tersebar di lokasi yang luas dan sulit dikoordinasikan. Dengan fitur pelacakan langsung pada peta, aplikasi ini memberikan visibilitas penuh bagi koordinator acara untuk memantau pergerakan setiap penjual. Di sisi lain, pembeli yang ingin mendukung dapat dengan mudah melihat titik lokasi penjual aktif di sekitar mereka. Aplikasi ini dibuat sebagai proyek untuk event kompetisi Vokasi Olivia, dengan fokus pada penyelesaian masalah nyata melalui teknologi.",
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "MySQL",
+      "NextAuth"
     ],
-    features: [
-      "Patient Management",
-      "Appointment Scheduling",
-      "Medical Records",
-      "Analytics Dashboard",
-      "HIPAA Compliance",
-      "Role-based Access",
-      "Prescription Management",
-      "Billing Integration",
+    "category": "Web Development",
+    "client": "Kompetisi Vokasi Olivia",
+    "duration": "1 Bulan",
+    "year": "2025",
+    "status": "Selesai",
+    "liveUrl": "Informasi tidak tersedia",
+    "githubUrl": "https://github.com/Ahmadlazim-03/danusin-next-js",
+    "images": [
+      "/images/danusin1.png?height=600&width=800",
+      "/images/danusin2.png?height=400&width=600",
+      "/images/danusin3.png?height=400&width=600",
+      "/images/danusin4.png?height=400&width=600"
     ],
-    challenges: [
-      "Ensuring HIPAA compliance and data security",
-      "Creating intuitive interfaces for medical staff",
-      "Integrating with existing medical systems",
-      "Managing complex patient data relationships",
+    "features": [
+      "Pelacakan Lokasi Penjual Real-Time",
+      "Tampilan Peta Interaktif",
+      "Sistem Autentikasi Pengguna (Admin & Penjual)",
+      "Dashboard Koordinator untuk Monitoring",
+      "Update Status Penjual",
+      "Desain Responsif untuk Penggunaan Mobile"
     ],
-    solutions: [
-      "Implemented end-to-end encryption and audit logging",
-      "Conducted user research with medical professionals for UX design",
-      "Built flexible API integrations with HL7 FHIR standards",
-      "Designed normalized database schema with proper relationships",
+    "challenges": [
+      "Mengimplementasikan pembaruan lokasi real-time yang efisien dan akurat",
+      "Mengelola state untuk banyak pengguna (penjual) secara bersamaan di peta",
+      "Merancang antarmuka yang sederhana dan intuitif untuk digunakan di lapangan"
     ],
-    sketchfabModel: "4a9a0c49756543948685e39942739609",
+    "solutions": [
+      "Menggunakan Next.js API Routes untuk menangani permintaan lokasi dari klien",
+      "Memanfaatkan library pemetaan (seperti Leaflet atau Mapbox) yang diintegrasikan dengan React",
+      "Menerapkan desain mobile-first dengan Tailwind CSS untuk memastikan pengalaman pengguna yang baik di perangkat seluler",
+      "Menggunakan Prisma sebagai ORM untuk menyederhanakan interaksi dengan database MySQL"
+    ]
   },
 }
 
