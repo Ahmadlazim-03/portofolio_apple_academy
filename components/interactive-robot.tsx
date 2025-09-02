@@ -16,7 +16,39 @@ interface Message {
   timestamp: Date
 }
 
-// Komponen ChatInterface yang selalu terlihat
+// Fungsi untuk memanggil Gemini API
+async function getAiResponse(prompt: string): Promise<string> {
+  // KOMENTAR: Ganti dengan API Key Anda dari Google AI Studio
+  const API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY
+  const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+
+  if (!API_KEY) {
+    return "API Key for Gemini is not configured. Please set it up in your environment variables."
+  }
+
+  try {
+    const response = await fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+      }),
+    })
+
+    if (!response.ok) {
+      throw new Error(`API request failed with status ${response.status}`)
+    }
+
+    const data = await response.json()
+    return data.candidates[0].content.parts[0].text
+  } catch (error) {
+    console.error("Error fetching AI response:", error)
+    return "Sorry, I'm having trouble connecting to my brain right now."
+  }
+}
+
 function ChatInterface({
   messages,
   onSendMessage,
@@ -51,12 +83,14 @@ function ChatInterface({
 
   useEffect(() => {
     if (scrollAreaRef.current) {
-      scrollAreaRef.current.scrollTop = scrollAreaRef.current.scrollHeight
+      const scrollElement = scrollAreaRef.current.querySelector("div")
+      if (scrollElement) {
+        scrollElement.scrollTop = scrollElement.scrollHeight
+      }
     }
   }, [messages])
 
   return (
-    // 1. JADIKAN CARD SEBAGAI CONTAINER UTAMA, HAPUS LOGIC BUKA/TUTUP
     <Card className="w-full h-full flex flex-col shadow-none border-0 rounded-none bg-transparent">
       <CardHeader className="pb-3">
         <CardTitle className="text-lg flex items-center gap-2">
@@ -69,10 +103,7 @@ function ChatInterface({
         <ScrollArea className="flex-1 pr-4" ref={scrollAreaRef}>
           <div className="space-y-3">
             {messages.map((message) => (
-              <div
-                key={message.id}
-                className={`flex ${message.sender === "user" ? "justify-end" : "justify-start"}`}
-              >
+              <div key={message.id} className={`flex ${message.sender === "user" ? "justify-end" : "justify-start"}`}>
                 <div
                   className={`max-w-[85%] p-3 rounded-lg text-sm ${
                     message.sender === "user"
@@ -125,29 +156,27 @@ function ChatInterface({
   )
 }
 
-// "Otak" dari Interactive Robot
 export function InteractiveRobot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      text: "Hello! I'm your AI robot assistant. How can I help you today?",
+      text: "Hello! I'm your AI robot assistant. Ask me anything or try a command like !aboutme, !techsteck, !alamat.",
       sender: "robot",
       timestamp: new Date(),
     },
   ])
   const [isListening, setIsListening] = useState(false)
-  const [isSpeaking, setIsSpeaking] = useState(false)
+  const [isSpeaking, setIsSpeaking] = useState(true) // Default to speak
   const [recognition, setRecognition] = useState<any>(null)
   const [synthesis, setSynthesis] = useState<any>(null)
 
   useEffect(() => {
-    // Inisialisasi Speech Recognition & Synthesis
     const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition
     if (SpeechRecognition) {
       const recognitionInstance = new SpeechRecognition()
       recognitionInstance.continuous = false
       recognitionInstance.interimResults = false
-      recognitionInstance.lang = "en-US"
+      recognitionInstance.lang = "id-ID" // Changed to Indonesian
       recognitionInstance.onresult = (event: any) => {
         handleSendMessage(event.results[0][0].transcript)
         setIsListening(false)
@@ -162,7 +191,7 @@ export function InteractiveRobot() {
   }, [])
 
   const handleSendMessage = useCallback(
-    (text: string) => {
+    async (text: string) => {
       if (!text) return
       const userMessage: Message = {
         id: Date.now().toString(),
@@ -172,30 +201,43 @@ export function InteractiveRobot() {
       }
       setMessages((prev) => [...prev, userMessage])
 
-      // Simulasi jawaban dari AI
-      setTimeout(() => {
-        const responses = [
-          "That's a great question! Let me think about that.",
-          "I'm processing your request. One moment please.",
-          "Interesting point. How can I elaborate on that for you?",
-          "I can certainly help with that. What are the specifics?",
-        ]
-        const robotMessage: Message = {
-          id: (Date.now() + 1).toString(),
-          text: responses[Math.floor(Math.random() * responses.length)],
-          sender: "robot",
-          timestamp: new Date(),
-        }
-        setMessages((prev) => [...prev, robotMessage])
-        if (synthesis && isSpeaking) {
-          const utterance = new SpeechSynthesisUtterance(robotMessage.text)
-          synthesis.speak(utterance)
-        }
-      }, 1000)
+      let robotResponseText = ""
+      const command = text.trim().toLowerCase()
+
+      // KOMENTAR: Logika untuk menangani command khusus
+      switch (command) {
+        case "!alamat":
+          robotResponseText = "Perak, Jombang, Jawa Timur"
+          break
+        case "!aboutme":
+          robotResponseText = "Ahmad Lazim, 20 tahun, Universitas Airlangga"
+          break
+        case "!techstack":
+          robotResponseText = "Laravel, Next.js, Flutter"
+          break
+        default:
+          // KOMENTAR: Jika bukan command, panggil AI
+          robotResponseText = await getAiResponse(text)
+          break
+      }
+
+      const robotMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        text: robotResponseText,
+        sender: "robot",
+        timestamp: new Date(),
+      }
+      setMessages((prev) => [...prev, robotMessage])
+
+      if (synthesis && isSpeaking) {
+        const utterance = new SpeechSynthesisUtterance(robotMessage.text)
+        utterance.lang = "id-ID"
+        synthesis.speak(utterance)
+      }
     },
     [synthesis, isSpeaking]
   )
-  
+
   const handleToggleListening = () => {
     if (!recognition) return
     if (isListening) {
@@ -211,7 +253,6 @@ export function InteractiveRobot() {
     setIsSpeaking(!isSpeaking)
   }
 
-  // 2. KOMPONEN INI SEKARANG HANYA MERENDER CHAT INTERFACE
   return (
     <ChatInterface
       messages={messages}

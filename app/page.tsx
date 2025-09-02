@@ -44,7 +44,7 @@ const ThreeScene = dynamic(() => import("@/components/three-scene").then((mod) =
   ),
 })
 
-type ProjectCategory = "all" | "web" | "mobile" | "incoming"
+type ProjectCategory = "all" | "web" | "mobile" | "ai" | "incoming"
 
 interface Project {
   name: string
@@ -175,12 +175,12 @@ export default function LandingPage() {
       tech: "Next.js, Typescript, Tailwind CSS, PocketBase",
       description: "Aplikasi untuk membantu mentracking lokasi dana usaha",
       "features": [
-        "Manajemen Rekam Medis Pasien Terpusat",
-        "Sistem Penjadwalan Janji Temu Online",
-        "Dasbor Analitik untuk Laporan Kinerja",
-        "Keamanan Data & Privasi Berstandar HIPAA",
-        "Kontrol Akses Berbasis Peran (Dokter, Staf)",
-        "Integrasi Penagihan (Billing) dan Pembayaran"
+        "Pelacakan Lokasi Penjual secara Real-Time di Peta",
+        "Dasbor Koordinator untuk Monitoring Tim",
+        "Manajemen Tim Penjual Terpusat (oleh Koordinator)",
+        "Update Status Aktivitas Penjual (Contoh: 'Berjualan', 'Istirahat')",
+        "Sistem Autentikasi Aman untuk Koordinator dan Penjual",
+        "Kontrol Akses Berbasis Peran (Koordinator vs. Penjual)"
       ],
       cta: "View Project",
       image: "/images/danusin1.png?height=200&width=300",
@@ -190,66 +190,146 @@ export default function LandingPage() {
     },
     {
       name: "Company Profile HIMTI 2025",
-      tech: "Next.js, Typescript, Tailwind CSS, PocketBase",
-      description: "Aplikasi untuk membantu mentracking lokasi dana usaha",
+      tech: "Laravel, PHP, Tailwind CSS, MySQL",
+      description: "Aplikasi company profile Himpunan Mahasiswa Teknik Informatika 2025",
       "features": [
-        "Manajemen Rekam Medis Pasien Terpusat",
-        "Sistem Penjadwalan Janji Temu Online",
-        "Dasbor Analitik untuk Laporan Kinerja",
-        "Keamanan Data & Privasi Berstandar HIPAA",
-        "Kontrol Akses Berbasis Peran (Dokter, Staf)",
-        "Integrasi Penagihan (Billing) dan Pembayaran"
+        "Halaman Utama dengan Profil Organisasi",
+        "Struktur Kepengurusan dan Detail Departemen",
+        "Agenda dan Rencana Program Kerja Tahunan",
+        "Portal Berita, Artikel, dan Pengumuman",
+        "Galeri Foto dan Video Dokumentasi Kegiatan",
+        "Formulir Pendaftaran dan Halaman Kontak",
+        "Sistem Manajemen Konten (CMS) untuk Admin",
+        "Integrasi Media Sosial Resmi HIMTI",
+        "Desain Modern yang Responsif di Semua Perangkat"
       ],
       cta: "View Project",
-      image: "/images/danusin1.png?height=200&width=300",
-      slug: "danusin",
+      image: "/images/compro1.png?height=200&width=300",
+      slug: "compro",
       category: "web",
       status: "completed",
     },
     {
-      name: "Volunteer Vibe",
-      tech: "React Native, Firebase",
-      description:
-        "Cross-platform mobile app for tracking workouts, nutrition, and fitness goals with social features.",
-      features: ["Workout Tracking", "Social Features", "Progress Analytics", "Offline Mode"],
+      name: "Chat bot Whatsapp",
+      tech: "n8n, WAHA, VPS, Redis",
+      "description": "Sebuah chatbot WhatsApp cerdas yang dibangun untuk melampaui kemampuan standar Meta AI. Bot ini memiliki kapabilitas multimodal canggih, memungkinkannya untuk menganalisis dan memproses berbagai jenis media seperti gambar, video, dokumen, dan pesan suara langsung di dalam percakapan.",
+      "features": [
+        "Analisis Konten Gambar (Image Recognition)",
+        "Ringkasan dan Analisis Video",
+        "Ekstraksi Teks dari Dokumen (PDF, Docx)",
+        "Transkripsi Pesan Suara menjadi Teks",
+        "Kemampuan Percakapan Kontekstual",
+        "Integrasi Alur Kerja Otomatis (via n8n)",
+        "Dukungan Multimodal (Teks, Gambar, Suara, Dokumen)"
+      ],
       cta: "View Project",
-      image: "/placeholder.svg?height=200&width=300",
-      slug: "fitness-app",
+      image: "/images/chatbot1.png?height=200&width=300",
+      slug: "chat-bot",
+      category: "ai",
+      status: "completed",
+    },
+    {
+      name: "Volunteer Vibe Application",
+      tech: "Android OS, Pocketbase, Flutter",
+      "description": "A mobile application designed to promote volunteerism among youth by connecting them with volunteer organizations through an engaging and accessible platform.",
+      "features": [
+        "Event Search by Geolocation",
+        "Gamification with Points and Badges",
+        "Social Media Sharing",
+        "Volunteer Hour Tracking"
+      ],
+      cta: "View Project",
+      image: "/images/volunteer1.png?height=200&width=300",
+      slug: "volunteervibe-app",
+      category: "mobile",
+      status: "completed"
+    },
+    {
+      name: "My Code Application",
+      tech: "Android OS, Pocketbase, Flutter",
+      "description": "Aplikasi mobile interaktif untuk belajar coding yang dirancang bagi pemula, mirip dengan W3Schools. Aplikasi ini menyediakan berbagai kursus terstruktur, latihan soal, dan elemen gamifikasi untuk membuat proses belajar menjadi efektif dan menyenangkan.",
+      "features": [
+        "Berbagai Kursus Pemrograman",
+        "Latihan Soal Interaktif",
+        "Fitur Gamifikasi (Poin & Lencana)",
+        "Code Editor dalam Aplikasi",
+        "Pelacakan Progres Belajar"
+      ],
+      cta: "View Project",
+      image: "/images/mycode1.png?height=200&width=300",
+      slug: "mycode-app",
       category: "mobile",
       status: "completed",
     },
     {
       name: "Netflix Application",
-      tech: "Flutter, Node.js, MongoDB",
-      description: "Complete food delivery solution with customer app, restaurant dashboard, and delivery tracking.",
-      features: ["Real-time Tracking", "Payment Integration", "Restaurant Management", "Push Notifications"],
+      tech: "Android OS, Pocketbase, Flutter",
+      "description": "Sebuah proyek kloning dari layanan streaming video populer, Netflix. Proyek ini mereplikasi pengalaman pengguna inti dalam menelusuri, mencari, dan menonton konten video, dibangun menggunakan Flutter untuk aplikasi mobile.",
+      "features": [
+        "Autentikasi Pengguna (Login & Register)",
+        "Beranda dengan Kategori Film",
+        "Fungsi Pencarian Konten",
+        "Halaman Detail Film (Sinopsis & Rating)",
+        "Pemutar Video Terintegrasi",
+        "Profil Pengguna dan 'My List'"
+      ],
       cta: "View Project",
-      image: "/placeholder.svg?height=200&width=300",
-      slug: "food-delivery-app",
+      image: "/images/netflix1.png?height=200&width=300",
+      slug: "netflix-app",
       category: "mobile",
       status: "completed",
     },
     {
-      name: "Fia Application",
-      tech: "Next.js, Python, TensorFlow",
-      description: "Advanced analytics platform with machine learning capabilities for business intelligence.",
-      features: ["AI Insights", "Custom Dashboards", "Data Visualization", "API Integration"],
-      cta: "Coming Soon",
-      image: "/placeholder.svg?height=200&width=300",
-      slug: "ai-analytics-platform",
-      category: "mobile",
-      status: "upcoming",
+      "name": "Si Pandu Application",
+        "tech": "Android OS, Pocketbase, Flutter",
+        "description": "Sebuah aplikasi pelaporan masyarakat untuk suatu daerah, yang memungkinkan pengguna untuk melaporkan kejadian bencana alam secara langsung melalui antarmuka peta. Laporan yang masuk kemudian dapat dilihat dan diproses oleh pemerintah daerah untuk penanganan yang lebih cepat dan terkoordinasi.",
+        "features": [
+          "Pelaporan Berbasis Peta (Map-Based Reporting)",
+          "Kirim Laporan dengan Foto & Deskripsi",
+          "Pelacakan Status Laporan (Diterima, Diproses, Selesai)",
+          "Dasbor Pemerintah untuk Verifikasi Laporan",
+          "Notifikasi Real-Time"
+        ],
+        "cta": "View Project",
+        "image": "/images/sipandu1.png?height=200&width=300",
+        "slug": "sipandu",
+        "category": "mobile",
+        "status": "completed"
     },
     {
       name: "Database Manager",
-      tech: "React, Web3.js, Solidity",
-      description: "Secure cryptocurrency wallet with multi-chain support and DeFi integration.",
-      features: ["Multi-chain Support", "DeFi Integration", "Security Features", "Portfolio Tracking"],
+      tech: "SvelteKit, Go Fiber, MongoDB",
+      "description": "Sebuah tool manajemen database berbasis web yang memungkinkan pengguna untuk terhubung ke berbagai jenis database seperti PostgreSQL, MongoDB, dan MySQL. Platform ini menyediakan fitur untuk mengelola koleksi/tabel secara remote dan secara otomatis membuat REST API yang aman untuk setiap koleksi, lengkap dengan sistem perizinan.",
+      "features": [
+        "Koneksi Multi-Database (PostgreSQL, MongoDB, MySQL)",
+        "Manajemen Koleksi/Tabel secara Remote",
+        "Generator REST API Otomatis",
+        "Sistem Perizinan (Permission) untuk API",
+        "Antarmuka Grafis (GUI) untuk Data"
+      ],
       cta: "In Development",
-      image: "/placeholder.svg?height=200&width=300",
-      slug: "blockchain-wallet",
+      image: "/images/database1.png?height=200&width=300",
+      slug: "database-manager",
       category: "incoming",
       status: "in-progress",
+    },
+     {
+      "name": "Auto Pre-Processing Data Tools",
+      "tech": "SvelteKit, Go Fiber, Python",
+      "description": "Sebuah tools berbasis web yang dirancang untuk mengotomatiskan dan menyederhanakan alur pra-pemrosesan data untuk kebutuhan machine learning. Pengguna dapat mengunggah dataset dan menerapkan berbagai teknik pra-pemrosesan melalui antarmuka yang interaktif untuk menyiapkan data mentah agar siap digunakan dalam model machine learning.",
+      "features": [
+        "Upload Dataset (CSV, Excel, dll.)",
+        "Penanganan Nilai yang Hilang (Missing Values)",
+        "Transformasi Data (Normalisasi & Standarisasi)",
+        "Encoding Variabel Kategorikal",
+        "Visualisasi Data Interaktif",
+        "Unduh Dataset yang Telah Diproses"
+      ],
+      "cta": "In Development",
+      "image": "/images/preprocessing1.png?height=200&width=300",
+      "slug": "data-preprocessing-tools",
+      "category": "incoming",
+      "status": "in-progress"
     },
   ]
 
@@ -257,6 +337,7 @@ export default function LandingPage() {
     { id: "all" as ProjectCategory, label: "All Projects", icon: <Filter className="size-4" /> },
     { id: "web" as ProjectCategory, label: "Web", icon: <Globe className="size-4" /> },
     { id: "mobile" as ProjectCategory, label: "Mobile", icon: <Smartphone className="size-4" /> },
+    { id: "ai" as ProjectCategory, label: "AI", icon: <Clock className="size-4" /> },
     { id: "incoming" as ProjectCategory, label: "Incoming", icon: <Clock className="size-4" /> },
   ]
 
@@ -276,10 +357,12 @@ export default function LandingPage() {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground shadow-lg">
-              A
-            </div>
-            <span>Alex Johnson</span>
+            <img
+              src="/images/myprofile.jpg" // Ganti dengan path gambar Anda
+              alt="Logo Ahmad Lazim"
+              className="size-8 rounded-lg shadow-lg object-cover"
+            />
+            <span>Ahmad Lazim</span>
           </motion.div>
 
           <nav className="hidden md:flex gap-8">
@@ -306,10 +389,16 @@ export default function LandingPage() {
               {mounted && theme === "dark" ? <Sun className="size-[18px]" /> : <Moon className="size-[18px]" />}
               <span className="sr-only">Toggle theme</span>
             </Button>
-            <Button className="rounded-full shadow-lg hover:shadow-xl transition-shadow">
+            <Button asChild className="rounded-full shadow-lg hover:shadow-xl transition-shadow">
+            <a 
+              href="https://wa.me/6281252374308" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
               Get Started
               <ChevronRight className="ml-1 size-4" />
-            </Button>
+            </a>
+          </Button>
           </div>
 
           <div className="flex items-center gap-4 md:hidden">
@@ -388,7 +477,7 @@ export default function LandingPage() {
               >
                 Full-Stack Developer &{" "}
                 <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                  UI/UX Designer
+                  Building Digital Solutions
                 </span>
               </motion.h1>
 
@@ -413,12 +502,15 @@ export default function LandingPage() {
                   <ArrowRight className="ml-2 size-4" />
                 </Button>
                 <Button
-                  size="lg"
-                  variant="outline"
-                  className="rounded-full h-12 px-8 text-base bg-transparent hover:bg-muted/50 transition-all"
-                >
+                asChild
+                size="lg"
+                variant="outline"
+                className="rounded-full h-12 px-8 text-base bg-transparent hover:bg-muted/50 transition-all"
+              >
+                <a href="/CV.pdf" download>
                   Download CV
-                </Button>
+                </a>
+              </Button>
               </motion.div>
 
               <motion.div
@@ -448,7 +540,7 @@ export default function LandingPage() {
             >
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-border/40 bg-gradient-to-b from-background to-muted/20 hover:shadow-3xl transition-shadow duration-500">
                 <Image
-                  src="https://cdn.dribbble.com/userupload/12302729/file/original-fa372845e394ee85bebe0389b9d86871.png?resize=1504x1128&vertical=center"
+                  src="/images/company.jpg?resize=1504x1128&vertical=center"
                   width={1280}
                   height={720}
                   alt="Portfolio dashboard"
@@ -474,7 +566,7 @@ export default function LandingPage() {
               className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
             >
               <Badge className="rounded-full px-4 py-1.5 text-sm font-medium" variant="secondary">
-                3D Showcase
+                My Assistant AI
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Interactive 3D Experience</h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
@@ -790,19 +882,29 @@ export default function LandingPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mt-4">
                 <Button
+                  asChild
                   size="lg"
                   variant="secondary"
                   className="rounded-full h-12 px-8 text-base shadow-lg hover:shadow-xl transition-all"
                 >
-                  Get In Touch
-                  <ArrowRight className="ml-2 size-4" />
+                  <a 
+                    href="https://wa.me/6281252374308" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    Get In Touch
+                    <ArrowRight className="ml-2 size-4" />
+                  </a>
                 </Button>
                 <Button
+                  asChild
                   size="lg"
                   variant="outline"
                   className="rounded-full h-12 px-8 text-base bg-transparent border-white text-white hover:bg-white/10 transition-all"
                 >
-                  Download CV
+                  <a href="/CV.pdf" download>
+                    Download CV
+                  </a>
                 </Button>
               </div>
               <p className="text-sm text-primary-foreground/80 mt-4">
@@ -821,10 +923,10 @@ export default function LandingPage() {
                 <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
                   A
                 </div>
-                <span>Alex Johnson</span>
+                <span>Ahmad Lazim</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Full-Stack Developer & UI/UX Designer. Creating beautiful, functional digital experiences.
+                Full-Stack Developer & Building Digital Solutions.
               </p>
               <div className="flex gap-4">
                 {[
@@ -862,7 +964,7 @@ export default function LandingPage() {
             {[
               { title: "Services", links: ["Web Development", "Mobile Apps", "UI/UX Design", "Consulting"] },
               { title: "Work", links: ["Portfolio", "Case Studies", "Blog", "Contact"] },
-              { title: "Connect", links: ["LinkedIn", "GitHub", "Twitter", "Dribbble"] },
+              { title: "Connect", links: ["https://www.linkedin.com/in/ahmad-lazim-5b8302288", "https://github.com/Ahmadlazim-03", "Twitter"] },
             ].map((section, index) => (
               <div key={index} className="space-y-4">
                 <h4 className="text-sm font-bold">{section.title}</h4>
@@ -881,7 +983,7 @@ export default function LandingPage() {
 
           <div className="flex flex-col gap-4 sm:flex-row justify-between items-center border-t border-border/40 pt-8">
             <p className="text-xs text-muted-foreground">
-              &copy; {new Date().getFullYear()} Alex Johnson. All rights reserved.
+              &copy; {new Date().getFullYear()} Ahmad Lazim. All rights reserved.
             </p>
             <div className="flex gap-4">
               {["Privacy Policy", "Terms of Service", "Cookie Policy"].map((link, index) => (
