@@ -15,14 +15,14 @@ import { SketchfabViewer } from "@/components/sketchfab-viewer"
 const projectsData = {
   "go-explore": {
     title: "Go Explore",
-    subtitle: "Aplikasi Booking Destinasi Daerah Surabaya",
+    subtitle: "Surabaya Destination Booking Application",
     description:
-      "Sebuah platform booking destinasi wisata yang berfokus pada kota Surabaya. Aplikasi ini memudahkan pengguna untuk menemukan, menjelajahi, dan memesan berbagai destinasi populer seperti taman kota, museum, wisata kuliner, hingga acara lokal. Dengan antarmuka yang modern dan intuitif, aplikasi ini dirancang untuk memberikan pengalaman pemesanan yang cepat, aman, dan nyaman bagi wisatawan lokal maupun mancanegara.",
+      "A destination booking platform focused on the city of Surabaya. This application makes it easy for users to discover, explore, and book various popular destinations such as city parks, museums, culinary spots, and local events. With a modern and intuitive interface, the app is designed to provide a fast, secure, and convenient booking experience for both local and international tourists.",
     longDescription:
-      "Aplikasi booking destinasi Surabaya ini dirancang untuk mendukung pariwisata lokal dengan menghadirkan kemudahan akses informasi dan reservasi. Pengguna dapat melihat detail setiap destinasi, mulai dari harga tiket, jam operasional, lokasi di peta, hingga ulasan dari pengunjung lain. Sistem ini dibangun menggunakan React untuk frontend dengan desain responsif dan ramah pengguna, serta Node.js dan MongoDB pada backend untuk pengelolaan data yang efisien. Fitur utama meliputi pencarian destinasi berdasarkan kategori (alam, budaya, kuliner), pemesanan tiket online dengan integrasi pembayaran, serta dashboard admin untuk mengelola data destinasi dan pesanan. Aplikasi ini dioptimalkan agar mendukung perangkat mobile sehingga wisatawan dapat dengan mudah melakukan booking kapan saja dan di mana saja.",
+      "This Surabaya destination booking application is designed to support local tourism by providing easy access to information and reservations. Users can view details of each destination, including ticket prices, operating hours, map locations, and reviews from other visitors. The system is built using React for a responsive and user-friendly frontend, with Node.js and MongoDB on the backend for efficient data management. Key features include destination search by category (nature, culture, culinary), online ticket booking with payment integration, and an admin dashboard for managing destination and order data. The app is optimized to support mobile devices, allowing tourists to book anytime, anywhere.",
     technologies: ["Laravel", "MySQL", "Tailwind CSS", "Midtrans"],
     category: "Web Development",
-    client: "Ujian Akhir Semester 3",
+    client: "Final Semester 3 Exam",
     duration: "3 months",
     year: "2024",
     status: "Completed",
@@ -35,494 +35,457 @@ const projectsData = {
       "/images/goexplore4.png?height=400&width=600",
     ],
     features: [
-      "Destinasi Wisata Surabaya Lengkap",
-      "Pencarian & Filter Berdasarkan Kategori (alam, budaya, kuliner, event)",
-      "Booking & Pembelian Tiket Online",
-      "Integrasi Payment Gateway",
-      "Peta Lokasi & Navigasi Destinasi",
-      "Ulasan & Rating Pengunjung",
-      "Rekomendasi Destinasi Populer",
-      "Notifikasi & Reminder Jadwal Kunjungan",
-      "Dashboard Admin untuk Pengelolaan Destinasi & Pemesanan",
-      "Desain Responsif (Mobile & Desktop)"
+      "Comprehensive Surabaya Tourist Destinations",
+      "Search & Filter by Category (nature, culture, culinary, events)",
+      "Online Booking & Ticket Purchase",
+      "Payment Gateway Integration",
+      "Destination Map & Navigation",
+      "Visitor Reviews & Ratings",
+      "Popular Destination Recommendations",
+      "Notifications & Visit Schedule Reminders",
+      "Admin Dashboard for Destination & Booking Management",
+      "Responsive Design (Mobile & Desktop)",
     ],
     challenges: [
-      "First time experience menggunakan Midtrans sebagai payment gateway",
-      "Sedikit mendapatkan struggle dalam manage kerja tim",
+      "First-time experience using Midtrans as a payment gateway",
+      "Some struggles in managing teamwork",
     ],
     solutions: [
-      "Mengintegrasikan payment gateway lokal untuk memudahkan transaksi tiket secara aman",
-      "Menggunakan pencarian berbasis kategori dan filter untuk mempermudah pengguna menemukan destinasi sesuai minat",
-      "Menyediakan peta interaktif dengan integrasi Google Maps untuk navigasi yang akurat",
-      "Membangun sistem ulasan dan rating agar pengguna dapat berbagi pengalaman serta membantu calon pengunjung lain",
-      "Menerapkan sistem notifikasi untuk mengingatkan jadwal kunjungan dan promo destinasi",
-      "Mengembangkan dashboard admin dengan fitur CRUD untuk destinasi, tiket, dan pemesanan",
-      "Mengoptimalkan desain responsif dengan Tailwind CSS agar dapat digunakan di berbagai perangkat"
-    ]
+      "Integrated a local payment gateway to facilitate secure ticket transactions",
+      "Implemented category-based search and filtering to help users find destinations based on their interests",
+      "Provided an interactive map with Google Maps integration for accurate navigation",
+      "Built a review and rating system for users to share experiences and assist other potential visitors",
+      "Implemented a notification system to remind users of visit schedules and destination promotions",
+      "Developed an admin dashboard with CRUD features for managing destinations, tickets, and bookings",
+      "Optimized responsive design with Tailwind CSS for use across various devices",
+    ],
   },
 
   "go-orbit": {
-    "title": "Website Perusahaan Go-orbit",
-    "subtitle": "Platform Digital untuk Layanan Pelatihan dan Konsultasi",
-    "description": "Website resmi untuk Go-orbit yang menampilkan profil perusahaan dan ragam layanan profesional seperti pelatihan, pembinaan, dan konsultasi untuk pengembangan sumber daya manusia dan korporasi.",
-    "longDescription": "Proyek ini bertujuan untuk membangun kehadiran digital yang kuat bagi Go-orbit. Website ini dirancang sebagai pusat informasi utama bagi calon klien, menyediakan detail lengkap mengenai program pelatihan, layanan konsultasi, dan acara yang diselenggarakan. Dengan navigasi yang mudah dan desain yang profesional, situs ini memfasilitasi calon klien dalam memahami keunggulan layanan Go-orbit dan memudahkan mereka untuk menghubungi tim untuk konsultasi lebih lanjut. Website ini juga berfungsi sebagai galeri portofolio yang menampilkan berbagai kegiatan dan testimoni dari klien sebelumnya untuk membangun kepercayaan dan kredibilitas.",
-    "technologies": [
-      "Cromwell",
-      "Next.js",
-      "Typescript",
-      "Tailwind CSS",
-      "MySQL"
-    ],
-    "category": "Web Development",
-    "client": "Go-orbit",
-    "duration": "3 Bulan",
-    "year": "2024",
-    "status": "Selesai",
-    "liveUrl": "https://www.go-orbit.id/",
-    "githubUrl": null,
-    "images": [
+    title: "Go-orbit Company Website",
+    subtitle: "Digital Platform for Training and Consulting Services",
+    description:
+      "The official website for Go-orbit, showcasing the company profile and a range of professional services such as training, coaching, and consulting for human resource and corporate development.",
+    longDescription:
+      "This project aims to establish a strong digital presence for Go-orbit. The website is designed as the primary information hub for potential clients, providing comprehensive details about training programs, consulting services, and organized events. With easy navigation and a professional design, the site facilitates potential clients in understanding Go-orbit’s service advantages and contacting the team for further consultation. The website also serves as a portfolio gallery showcasing various activities and testimonials from previous clients to build trust and credibility.",
+    technologies: ["Cromwell", "Next.js", "Typescript", "Tailwind CSS", "MySQL"],
+    category: "Web Development",
+    client: "Go-orbit",
+    duration: "3 Months",
+    year: "2024",
+    status: "Completed",
+    liveUrl: "https://www.go-orbit.id/",
+    githubUrl: null,
+    images: [
       "/images/goorbit1.png?height=600&width=800",
       "/images/goorbit2.png?height=400&width=600",
       "/images/goorbit3.png?height=400&width=600",
-      "/images/goorbit4.png?height=400&width=600"
+      "/images/goorbit4.png?height=400&width=600",
     ],
-    "features": [
-      "Desain Profesional dan Responsif",
-      "Halaman Profil Perusahaan (Tentang Kami)",
-      "Katalog Layanan (Pelatihan, Konsultasi, Outbound)",
-      "Galeri Dokumentasi Kegiatan",
-      "Formulir Kontak dan Informasi Lokasi",
-      "Area Testimoni Klien",
-      "Integrasi Media Sosial",
-      "Struktur SEO-Friendly"
+    features: [
+      "Professional and Responsive Design",
+      "Company Profile Page (About Us)",
+      "Service Catalog (Training, Consulting, Outbound)",
+      "Activity Documentation Gallery",
+      "Contact Form and Location Information",
+      "Client Testimonials Section",
+      "Social Media Integration",
+      "SEO-Friendly Structure",
     ],
-    "challenges": [
-      "Menerjemahkan visi dan nilai perusahaan Go-orbit ke dalam desain visual yang menarik.",
-      "Menyusun struktur informasi layanan yang kompleks agar mudah dipahami oleh pengunjung.",
-      "Memastikan website memiliki performa yang cepat dan optimal di berbagai perangkat.",
-      "Penyesuain dan adaptasi dengan framework Cromwell CMS"
+    challenges: [
+      "Translating Go-orbit’s vision and values into an engaging visual design",
+      "Organizing complex service information to be easily understood by visitors",
+      "Ensuring fast and optimal website performance across various devices",
+      "Adapting to and customizing the Cromwell CMS framework",
     ],
-    "solutions": [
-      "Melakukan sesi diskusi intensif dengan klien untuk memahami brand identity dan menerapkannya pada UI/UX website.",
-      "Membuat arsitektur informasi yang logis dengan navigasi yang intuitif untuk setiap kategori layanan.",
-      "Mengimplementasikan teknik optimasi aset (gambar dan kode) untuk mempercepat waktu muat halaman.",
-      "Menyediakan halaman galeri dan testimoni untuk membangun bukti sosial (social proof) dan kepercayaan calon klien."
-    ]
+    solutions: [
+      "Conducted intensive discussions with the client to understand brand identity and apply it to the website’s UI/UX",
+      "Created a logical information architecture with intuitive navigation for each service category",
+      "Implemented asset optimization techniques (images and code) to speed up page load times",
+      "Provided a gallery and testimonials page to build social proof and trust for potential clients",
+    ],
   },
 
-   "danusin": {
-    "title": "Danusin",
-    "subtitle": "Aplikasi Pelacakan Peta untuk Kegiatan Dana Usaha",
-    "description": "Sebuah aplikasi berbasis peta yang dirancang untuk membantu koordinator dan penjual dalam kegiatan dana usaha (danus). Aplikasi ini memungkinkan pelacakan lokasi penjual secara real-time, memudahkan pembeli menemukan penjual terdekat, dan membantu koordinator memantau penyebaran tim di lapangan.",
-    "longDescription": "Danusin dikembangkan sebagai solusi untuk tantangan logistik dalam kegiatan dana usaha, di mana penjual seringkali tersebar di lokasi yang luas dan sulit dikoordinasikan. Dengan fitur pelacakan langsung pada peta, aplikasi ini memberikan visibilitas penuh bagi koordinator acara untuk memantau pergerakan setiap penjual. Di sisi lain, pembeli yang ingin mendukung dapat dengan mudah melihat titik lokasi penjual aktif di sekitar mereka. Aplikasi ini dibuat sebagai proyek untuk event kompetisi Vokasi Olivia, dengan fokus pada penyelesaian masalah nyata melalui teknologi.",
-    "technologies": [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Prisma",
-      "MySQL",
-      "NextAuth"
-    ],
-    "category": "Web Development",
-    "client": "Kompetisi Vokasi Olivia",
-    "duration": "1 Bulan",
-    "year": "2025",
-    "status": "Selesai",
-    "liveUrl": "https://danusin.com",
-    "githubUrl": "https://github.com/Ahmadlazim-03/danusin-next-js",
-    "images": [
+  "danusin": {
+    title: "Danusin",
+    subtitle: "Map-Based Tracking Application for Fundraising Activities",
+    description:
+      "A map-based application designed to assist coordinators and sellers in fundraising activities. The app enables real-time location tracking of sellers, helps buyers find the nearest seller, and allows coordinators to monitor team distribution in the field.",
+    longDescription:
+      "Danusin was developed as a solution to logistical challenges in fundraising activities, where sellers are often spread across wide areas and difficult to coordinate. With real-time map-based tracking, the app provides full visibility for event coordinators to monitor each seller’s movements. Meanwhile, buyers looking to support can easily locate active sellers nearby. The application was created as a project for the Olivia Vocational Competition, focusing on solving real-world problems through technology.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Prisma", "MySQL", "NextAuth"],
+    category: "Web Development",
+    client: "Olivia Vocational Competition",
+    duration: "1 Month",
+    year: "2025",
+    status: "Completed",
+    liveUrl: "https://danusin.com",
+    githubUrl: "https://github.com/Ahmadlazim-03/danusin-next-js",
+    images: [
       "/images/danusin1.png?height=600&width=800",
       "/images/danusin2.png?height=400&width=600",
       "/images/danusin3.png?height=400&width=600",
-      "/images/danusin4.png?height=400&width=600"
+      "/images/danusin4.png?height=400&width=600",
     ],
-    "features": [
-      "Pelacakan Lokasi Penjual Real-Time",
-      "Tampilan Peta Interaktif",
-      "Sistem Autentikasi Pengguna (Admin & Penjual)",
-      "Dashboard Koordinator untuk Monitoring",
-      "Update Status Penjual",
-      "Desain Responsif untuk Penggunaan Mobile"
+    features: [
+      "Real-Time Seller Location Tracking",
+      "Interactive Map Display",
+      "User Authentication System (Admin & Seller)",
+      "Coordinator Dashboard for Monitoring",
+      "Seller Status Updates",
+      "Responsive Design for Mobile Use",
     ],
-    "challenges": [
-      "Mengimplementasikan pembaruan lokasi real-time yang efisien dan akurat",
-      "Mengelola state untuk banyak pengguna (penjual) secara bersamaan di peta",
-      "Merancang antarmuka yang sederhana dan intuitif untuk digunakan di lapangan"
+    challenges: [
+      "Implementing efficient and accurate real-time location updates",
+      "Managing state for multiple users (sellers) simultaneously on the map",
+      "Designing a simple and intuitive interface for field use",
     ],
-    "solutions": [
-      "Menggunakan Next.js API Routes untuk menangani permintaan lokasi dari klien",
-      "Memanfaatkan library pemetaan (seperti Leaflet atau Mapbox) yang diintegrasikan dengan React",
-      "Menerapkan desain mobile-first dengan Tailwind CSS untuk memastikan pengalaman pengguna yang baik di perangkat seluler",
-      "Menggunakan Prisma sebagai ORM untuk menyederhanakan interaksi dengan database MySQL"
-    ]
+    solutions: [
+      "Used Next.js API Routes to handle location requests from clients",
+      "Leveraged mapping libraries (such as Leaflet or Mapbox) integrated with React",
+      "Applied mobile-first design with Tailwind CSS to ensure a good user experience on mobile devices",
+      "Used Prisma as an ORM to simplify interactions with the MySQL database",
+    ],
   },
 
   "compro": {
-    "title": "Website Profil HIMTI UNAIR 2025",
-    "subtitle": "Platform Digital Resmi Himpunan Mahasiswa Teknik Informatika Universitas Airlangga",
-    "description": "Sebuah website profil perusahaan (company profile) yang dirancang sebagai pusat informasi dan media komunikasi resmi untuk Himpunan Mahasiswa Teknik Informatika (HIMTI) Universitas Airlangga periode 2025.",
-    "longDescription": "Website ini dikembangkan untuk merepresentasikan identitas, visi, dan misi HIMTI UNAIR 2025 secara profesional kepada mahasiswa, fakultas, dan pihak eksternal. Platform ini berfungsi sebagai sumber informasi utama mengenai struktur kepengurusan, program kerja yang akan datang, dokumentasi kegiatan, serta artikel dan berita terbaru. Tujuannya adalah untuk meningkatkan engagement anggota, mempermudah penyebaran informasi, dan membangun citra organisasi yang modern dan terstruktur.",
-    "technologies": [
-      "Laravel",
-      "PHP",
-      "MySQL",
-      "Blade",
-      "Tailwind CSS",
-      "Livewire"
-    ],
-    "category": "Web Development",
-    "client": "HIMTI Universitas Airlangga 2025",
-    "duration": "2 Bulan",
-    "year": "2025",
-    "status": "Selesai",
-    "liveUrl": "https://himtiunair.com",
-    "githubUrl": "https://github.com/Ahmadlazim-03/Company-Profile",
-    "images": [
+    title: "HIMTI UNAIR 2025 Profile Website",
+    subtitle: "Official Digital Platform for the Informatics Engineering Student Association of Airlangga University",
+    description:
+      "A company profile website designed as the official information and communication hub for the Informatics Engineering Student Association (HIMTI) of Airlangga University for the 2025 period.",
+    longDescription:
+      "This website was developed to professionally represent the identity, vision, and mission of HIMTI UNAIR 2025 to students, faculty, and external parties. The platform serves as the primary source of information regarding the organizational structure, upcoming work programs, activity documentation, and the latest articles and news. Its goal is to increase member engagement, streamline information dissemination, and build a modern and structured organizational image.",
+    technologies: ["Laravel", "PHP", "MySQL", "Blade", "Tailwind CSS", "Livewire"],
+    category: "Web Development",
+    client: "HIMTI Airlangga University 2025",
+    duration: "2 Months",
+    year: "2025",
+    status: "Completed",
+    liveUrl: "https://himtiunair.com",
+    githubUrl: "https://github.com/Ahmadlazim-03/Company-Profile",
+    images: [
       "/images/compro1.png?height=600&width=800",
       "/images/compro2.png?height=400&width=600",
       "/images/compro3.png?height=400&width=600",
-      "/images/compro4.png?height=400&width=600"
+      "/images/compro4.png?height=400&width=600",
     ],
-    "features": [
-      "Profil Lengkap & Visi Misi Organisasi",
-      "Halaman Struktur Kepengurusan 2025",
-      "Agenda dan Detail Program Kerja",
-      "Portal Artikel, Berita, dan Dokumentasi",
-      "Galeri Foto dan Video Kegiatan",
-      "Sistem Manajemen Konten (CMS) untuk Admin",
-      "Desain Modern dan Responsif"
+    features: [
+      "Complete Profile & Organization Vision-Mission",
+      "2025 Organizational Structure Page",
+      "Agenda and Work Program Details",
+      "Article, News, and Documentation Portal",
+      "Photo and Video Activity Gallery",
+      "Content Management System (CMS) for Admins",
+      "Modern and Responsive Design",
     ],
-    "challenges": [
-      "Merancang UI/UX yang profesional dan sesuai dengan identitas brand HIMTI",
-      "Menyusun arsitektur informasi yang terstruktur untuk menampung banyak konten (proker, berita, dll.)",
-      "Membangun sistem back-end yang mudah digunakan oleh pengurus untuk memperbarui konten website."
+    challenges: [
+      "Designing a professional UI/UX that aligns with HIMTI’s brand identity",
+      "Structuring information architecture to accommodate extensive content (work programs, news, etc.)",
+      "Building a backend system that is easy for board members to use for updating website content",
     ],
-    "solutions": [
-      "Menerapkan design system berbasis brand guide HIMTI untuk konsistensi visual",
-      "Menggunakan rendering dari sisi server (SSR) dengan Blade untuk performa website yang cepat dan SEO-friendly",
-      "Membangun panel admin kustom menggunakan resource controller Laravel untuk manajemen konten dinamis",
-      "Menerapkan desain mobile-first dengan Tailwind CSS agar dapat diakses di semua perangkat."
-    ]
+    solutions: [
+      "Applied a design system based on HIMTI’s brand guidelines for visual consistency",
+      "Used server-side rendering (SSR) with Blade for fast and SEO-friendly website performance",
+      "Built a custom admin panel using Laravel’s resource controller for dynamic content management",
+      "Applied mobile-first design with Tailwind CSS for accessibility across all devices",
+    ],
   },
 
   "chat-bot": {
-    "title": "WhatsApp Chatbot Cerdas",
-    "subtitle": "Asisten AI Multimodal dengan Kemampuan Analisis Media",
-    "description": "Sebuah chatbot WhatsApp cerdas yang dibangun untuk melampaui kemampuan standar Meta AI. Bot ini memiliki kapabilitas multimodal canggih, memungkinkannya menganalisis dan memproses berbagai jenis media langsung di dalam percakapan.",
-    "longDescription": "Proyek ini dikembangkan untuk mengatasi keterbatasan chatbot konvensional dengan mengintegrasikan model AI canggih. Chatbot ini tidak hanya memahami teks, tetapi juga dapat menganalisis konten gambar, merangkum video, mengekstrak teks dari dokumen, dan mentranskripsi pesan suara. Dibangun dengan n8n untuk orkestrasi alur kerja, bot ini dapat dihubungkan ke berbagai layanan eksternal, menjadikannya alat yang sangat fleksibel untuk otomatisasi tugas, asisten pribadi, atau bahkan sebagai alat bantu belajar.",
-    "technologies": [
-      "n8n",
-      "WAHA (WhatsApp HTTP API)",
-      "Docker",
-      "VPS",
-      "Redis",
-      "GPT-4o"
-    ],
-    "category": "Artificial Intelligence",
-    "client": "Proyek Pribadi",
-    "duration": "1 Bulan",
-    "year": "2025",
-    "status": "Selesai",
-    "liveUrl": "",
-    "githubUrl": "",
-    "images": [
+    title: "Smart WhatsApp Chatbot",
+    subtitle: "Multimodal AI Assistant with Media Analysis Capabilities",
+    description:
+      "A smart WhatsApp chatbot built to surpass the capabilities of standard Meta AI. This bot has advanced multimodal capabilities, allowing it to analyze and process various types of media directly within conversations.",
+    longDescription:
+      "This project was developed to address the limitations of conventional chatbots by integrating advanced AI models. The chatbot not only understands text but can also analyze image content, summarize videos, extract text from documents, and transcribe voice messages. Built with n8n for workflow orchestration, the bot can connect to various external services, making it a highly flexible tool for task automation, personal assistance, or even as a learning aid.",
+    technologies: ["n8n", "WAHA (WhatsApp HTTP API)", "Docker", "VPS", "Redis", "GPT-4o"],
+    category: "Artificial Intelligence",
+    client: "Personal Project",
+    duration: "1 Month",
+    year: "2025",
+    status: "Completed",
+    liveUrl: "",
+    githubUrl: "",
+    images: [
       "/images/chatbot1.png?height=600&width=800",
       "/images/chatbot2.png?height=400&width=600",
       "/images/chatbot3.png?height=400&width=600",
       "/images/chatbot4.png?height=400&width=600",
-      "/images/chatbot5.png?height=400&width=600"
+      "/images/chatbot5.png?height=400&width=600",
     ],
-    "features": [
-      "Analisis Konten Gambar (Image Recognition)",
-      "Ringkasan dan Analisis Video",
-      "Ekstraksi Teks dari Dokumen (PDF, Docx)",
-      "Transkripsi Pesan Suara menjadi Teks",
-      "Kemampuan Percakapan Kontekstual",
-      "Integrasi Alur Kerja Otomatis (via n8n)",
-      "Dukungan Multimodal (Teks, Gambar, Suara, Dokumen)"
+    features: [
+      "Image Content Analysis (Image Recognition)",
+      "Video Summarization and Analysis",
+      "Text Extraction from Documents (PDF, Docx)",
+      "Voice Message Transcription to Text",
+      "Contextual Conversation Capabilities",
+      "Automated Workflow Integration (via n8n)",
+      "Multimodal Support (Text, Image, Voice, Document)",
     ],
-    "challenges": [
-      "Mengintegrasikan berbagai model AI untuk analisis multimodal (gambar, video, suara).",
-      "Menjaga waktu respons bot agar tetap cepat dan interaktif, terutama saat memproses media.",
-      "Menangani berbagai format file dan potensi error saat pemrosesan.",
-      "Mengelola state percakapan agar tetap relevan dan tidak kehilangan konteks."
+    challenges: [
+      "Integrating various AI models for multimodal analysis (image, video, voice)",
+      "Maintaining fast and interactive bot response times, especially when processing media",
+      "Handling various file formats and potential errors during processing",
+      "Managing conversation state to remain relevant and maintain context",
     ],
-    "solutions": [
-      "Menggunakan n8n sebagai platform orkestrasi untuk menghubungkan API WhatsApp dengan berbagai layanan AI.",
-      "Memanfaatkan Redis untuk caching dan antrian tugas (queueing) agar pemrosesan media tidak memblokir percakapan.",
-      "Membangun logika penanganan error yang tangguh untuk setiap jenis media yang diunggah.",
-      "Menyimpan riwayat percakapan singkat dalam Redis untuk menjaga konteks pembicaraan."
-    ]
+    solutions: [
+      "Used n8n as an orchestration platform to connect the WhatsApp API with various AI services",
+      "Leveraged Redis for caching and task queuing to ensure media processing does not block conversations",
+      "Built robust error-handling logic for each media type uploaded",
+      "Stored short conversation history in Redis to maintain conversation context",
+    ],
   },
 
   "volunteervibe-app": {
-    "title": "VolunteerVibe",
-    "subtitle": "Aplikasi Mobile untuk Mempromosikan Volunteerisme di Kalangan Remaja",
-    "description": "Sebuah aplikasi mobile yang dirancang untuk mempromosikan kegiatan sukarelawan di kalangan remaja usia 15-25 dengan menjembatani kesenjangan antara mereka dan organisasi sosial.",
-    "longDescription": "Proyek ini dikembangkan sebagai solusi inovatif untuk mengatasi rendahnya tingkat partisipasi sukarelawan di kalangan remaja. Aplikasi ini bertujuan untuk mengatasi tantangan seperti kurangnya kesadaran dan aksesibilitas terhadap peluang, serta untuk menumbuhkan rasa tanggung jawab sosial, pengembangan keterampilan, dan koneksi komunitas di antara para penggunanya.",
-    "technologies": [
-      "Android OS",
-      "PocketBase",
-      "Google Maps API"
-    ],
-    "category": "Mobile Application",
-    "client": "Mr. Boda",
-    "duration": "4 Minggu",
-    "year": "2024",
-    "status": "Spesifikasi Kebutuhan Selesai",
-    "liveUrl": "",
-    "githubUrl": "https://github.com/Arya-f4/VolunteerVibe",
-    "images": [
+    title: "VolunteerVibe",
+    subtitle: "Mobile Application to Promote Volunteerism Among Youth",
+    description:
+      "A mobile application designed to promote volunteer activities among teenagers aged 15-25 by bridging the gap between them and social organizations.",
+    longDescription:
+      "This project was developed as an innovative solution to address the low participation rate of volunteers among teenagers. The application aims to tackle challenges such as lack of awareness and accessibility to opportunities while fostering a sense of social responsibility, skill development, and community connections among its users.",
+    technologies: ["Android OS", "PocketBase", "Google Maps API"],
+    category: "Mobile Application",
+    client: "Mr. Boda",
+    duration: "4 Weeks",
+    year: "2024",
+    status: "Requirements Specification Completed",
+    liveUrl: "",
+    githubUrl: "https://github.com/Arya-f4/VolunteerVibe",
+    images: [
       "/images/volunteer1.png?height=10&width=10",
       "/images/volunteer2.png?height=400&width=600",
       "/images/volunteer3.png?height=400&width=600",
       "/images/volunteer4.png?height=10&width=10",
       "/images/volunteer5.png?height=400&width=600",
-      "/images/volunteer6.png?height=400&width=600"
+      "/images/volunteer6.png?height=400&width=600",
     ],
-    "features": [
-      "Pencarian acara berdasarkan geolokasi, kategori, atau tanggal",
-      "Manajemen akun pengguna (registrasi, login, reset password)",
-      "Pendaftaran dan posting acara oleh organisasi",
-      "Fitur gamifikasi dengan poin, hadiah, dan lencana",
-      "Pelacakan dan pencatatan jam sukarelawan",
-      "Notifikasi pengingat acara dan peluang baru",
-      "Berbagi aktivitas ke media sosial"
+    features: [
+      "Event Search by Geolocation, Category, or Date",
+      "User Account Management (Registration, Login, Password Reset)",
+      "Event Registration and Posting by Organizations",
+      "Gamification Features with Points, Rewards, and Badges",
+      "Volunteer Hours Tracking and Logging",
+      "Event and Opportunity Reminder Notifications",
+      "Social Media Sharing of Activities",
     ],
-    "challenges": [
-      "Menciptakan platform yang menarik untuk meningkatkan partisipasi sukarelawan di kalangan remaja.",
-      "Memastikan sistem dapat menangani hingga 1000 pengguna secara bersamaan.",
-      "Menjamin keamanan dan privasi data pengguna sesuai dengan standar GDPR."
+    challenges: [
+      "Creating an engaging platform to boost volunteer participation among teenagers",
+      "Ensuring the system can handle up to 1000 simultaneous users",
+      "Ensuring user data security and privacy in compliance with GDPR standards",
     ],
-    "solutions": [
-      "Menerapkan fitur gamifikasi seperti poin dan lencana untuk memotivasi pengguna.",
-      "Menggunakan Pocketbase yang skalabel untuk manajemen database real-time dan autentikasi.",
-      "Mengimplementasikan fitur pencarian canggih berbasis geolokasi untuk memudahkan penemuan acara.",
-      "Mewajibkan penanganan data yang aman sebagai salah satu syarat utama sistem."
-    ]
+    solutions: [
+      "Implemented gamification features like points and badges to motivate users",
+      "Used scalable PocketBase for real-time database management and authentication",
+      "Implemented advanced geolocation-based search to facilitate event discovery",
+      "Mandated secure data handling as a core system requirement",
+    ],
   },
 
   "mycode-app": {
-    "title": "My Code Application",
-    "subtitle": "Platform Belajar Coding Interaktif",
-    "description": "Sebuah aplikasi mobile interaktif untuk belajar coding yang dirancang bagi pemula, mirip dengan W3Schools. Aplikasi ini menyediakan berbagai kursus terstruktur, latihan soal, dan elemen gamifikasi untuk membuat proses belajar menjadi efektif dan menyenangkan.",
-    "longDescription": "Proyek ini dikembangkan untuk membuat pembelajaran coding lebih mudah diakses oleh siapa saja, kapan saja, langsung dari perangkat mobile. Aplikasi ini memecah konsep-konsep pemrograman yang kompleks menjadi materi-materi singkat yang mudah dicerna. Dengan adanya code editor terintegrasi dan latihan interaktif, pengguna dapat langsung mempraktikkan teori yang dipelajari. Elemen gamifikasi seperti poin, lencana, dan papan peringkat ditambahkan untuk menjaga motivasi dan menciptakan pengalaman belajar yang tidak membosankan.",
-    "technologies": [
-      "Flutter",
-      "PocketBase",
-      "Android OS"
-    ],
-    "category": "Edukasi & Mobile",
-    "client": "Proyek Pribadi",
-    "duration": "2 Bulan",
-    "year": "2025",
-    "status": "Selesai",
-    "liveUrl": "",
-    "githubUrl": "https://github.com/Ahmadlazim-03/Mobile-Flutter-My-Code",
-    "images": [
+    title: "My Code Application",
+    subtitle: "Interactive Coding Learning Platform",
+    description:
+      "An interactive mobile application for learning to code, designed for beginners, similar to W3Schools. The app provides structured courses, practice exercises, and gamification elements to make learning effective and engaging.",
+    longDescription:
+      "This project was developed to make coding education more accessible to anyone, anytime, directly from a mobile device. The application breaks down complex programming concepts into concise, digestible lessons. With an integrated code editor and interactive exercises, users can immediately apply the theory they learn. Gamification elements such as points, badges, and leaderboards are added to maintain motivation and create an engaging learning experience.",
+    technologies: ["Flutter", "PocketBase", "Android OS"],
+    category: "Education & Mobile",
+    client: "Personal Project",
+    duration: "2 Months",
+    year: "2025",
+    status: "Completed",
+    liveUrl: "",
+    githubUrl: "https://github.com/Ahmadlazim-03/Mobile-Flutter-My-Code",
+    images: [
       "/images/mycode1.png?height=600&width=800",
       "/images/mycode2.png?height=400&width=600",
       "/images/mycode3.png?height=400&width=600",
-      "/images/mycode4.png?height=400&width=600"
+      "/images/mycode4.png?height=400&width=600",
     ],
-    "features": [
-      "Berbagai Kursus Pemrograman (Python, JavaScript, dll.)",
-      "Latihan Soal Interaktif dengan Pengecekan Kode",
-      "Fitur Gamifikasi (Poin, Lencana, Papan Peringkat)",
-      "Code Playground di dalam Aplikasi",
-      "Pelacakan Progres Belajar per Kursus",
-      "Sertifikat Penyelesaian Kursus"
+    features: [
+      "Various Programming Courses (Python, JavaScript, etc.)",
+      "Interactive Practice Exercises with Code Checking",
+      "Gamification Features (Points, Badges, Leaderboards)",
+      "In-App Code Playground",
+      "Learning Progress Tracking per Course",
+      "Course Completion Certificates",
     ],
-    "challenges": [
-      "Mendesain code editor yang fungsional dan nyaman digunakan di layar kecil.",
-      "Membuat materi kursus yang terstruktur dan mudah dipahami oleh pemula.",
-      "Mengimplementasikan sistem pengecekan kode (code checker) yang akurat untuk latihan soal."
+    challenges: [
+      "Designing a functional and user-friendly code editor for small screens",
+      "Creating structured and beginner-friendly course content",
+      "Implementing an accurate code checker for practice exercises",
     ],
-    "solutions": [
-      "Menggunakan custom widget Flutter untuk membangun antarmuka editor yang responsif.",
-      "Menyusun kurikulum secara bertahap (step-by-step) dengan contoh kasus nyata.",
-      "Mengintegrasikan backend service dengan PocketBase untuk menjalankan dan memvalidasi kode dari latihan soal.",
-      "Menerapkan sistem gamifikasi untuk meningkatkan motivasi dan retensi pengguna."
-    ]
+    solutions: [
+      "Used custom Flutter widgets to build a responsive editor interface",
+      "Developed a step-by-step curriculum with real-world examples",
+      "Integrated a backend service with PocketBase to run and validate code from exercises",
+      "Applied gamification to enhance user motivation and retention",
+    ],
   },
 
   "netflix-app": {
-    "title": "Netflix Application",
-    "subtitle": "Proyek Kloning Aplikasi Streaming Video Populer",
-    "description": "Sebuah proyek kloning dari layanan streaming video populer, Netflix. Proyek ini mereplikasi pengalaman pengguna inti dalam menelusuri, mencari, dan menonton konten video, dibangun menggunakan Flutter untuk aplikasi mobile.",
-    "longDescription": "Proyek ini bertujuan untuk memahami dan mengimplementasikan arsitektur dasar dari aplikasi streaming berskala besar. Fokus utamanya adalah pada pengembangan antarmuka (UI/UX) yang responsif dan mirip dengan aplikasi aslinya menggunakan Flutter. Data film dan serial TV diambil dari API eksternal (seperti TMDB), kemudian dikelola oleh backend Node.js yang juga menangani autentikasi dan data pengguna, seperti daftar tontonan (My List).",
-    "technologies": [
-      "Flutter",
-      "Node.js",
-      "MongoDB",
-      "TMDB API"
-    ],
-    "category": "Mobile & Streaming",
-    "client": "Proyek Pribadi",
-    "duration": "3 Bulan",
-    "year": "2025",
-    "status": "Selesai",
-    "liveUrl": "",
-    "githubUrl": "https://github.com/Ahmadlazim-03/netflix_mobile_application",
-    "images": [
+    title: "Netflix Application",
+    subtitle: "Cloning Project of a Popular Video Streaming Application",
+    description:
+      "A cloning project of the popular video streaming service, Netflix. This project replicates the core user experience of browsing, searching, and watching video content, built using Flutter for the mobile application.",
+    longDescription:
+      "This project aims to understand and implement the core architecture of a large-scale streaming application. The main focus is on developing a responsive UI/UX similar to the original app using Flutter. Movie and TV show data are fetched from an external API (such as TMDB), managed by a Node.js backend that also handles authentication and user data, such as watchlists (My List).",
+    technologies: ["Flutter", "Node.js", "MongoDB", "TMDB API"],
+    category: "Mobile & Streaming",
+    client: "Personal Project",
+    duration: "3 Months",
+    year: "2025",
+    status: "Completed",
+    liveUrl: "",
+    githubUrl: "https://github.com/Ahmadlazim-03/netflix_mobile_application",
+    images: [
       "/images/netflix1.png?height=600&width=800",
       "/images/netflix2.png?height=400&width=600",
       "/images/netflix3.png?height=400&width=600",
       "/images/netflix4.png?height=400&width=600",
-      "/images/netflix5.png?height=400&width=600"
+      "/images/netflix5.png?height=400&width=600",
     ],
-    "features": [
-      "Autentikasi Pengguna (Login & Register)",
-      "Beranda Dinamis dengan Kategori Konten (Trending, Populer, dll.)",
-      "Fungsi Pencarian Film dan Serial TV",
-      "Halaman Detail Konten (Sinopsis, Rating, Aktor)",
-      "Pemutar Video Terintegrasi dengan Kontrol Dasar",
-      "Fitur 'My List' untuk Menyimpan Tontonan"
+    features: [
+      "User Authentication (Login & Register)",
+      "Dynamic Homepage with Content Categories (Trending, Popular, etc.)",
+      "Movie and TV Show Search Function",
+      "Content Detail Page (Synopsis, Rating, Cast)",
+      "Integrated Video Player with Basic Controls",
+      "‘My List’ Feature for Saving Watchlist Content",
     ],
-    "challenges": [
-      "Membangun UI yang kompleks dan responsif seperti Netflix menggunakan Flutter.",
-      "Mengelola state aplikasi yang besar, termasuk data film dan status pengguna (e.g., watchlist).",
-      "Mengintegrasikan API eksternal (seperti TMDB) secara efisien untuk mendapatkan data konten."
+    challenges: [
+      "Building a complex and responsive UI like Netflix using Flutter",
+      "Managing large application state, including movie data and user status (e.g., watchlist)",
+      "Efficiently integrating an external API (like TMDB) for content data",
     ],
-    "solutions": [
-      "Menggunakan arsitektur widget Flutter yang modular untuk membangun setiap komponen UI secara terpisah.",
-      "Menerapkan state management solution (seperti BLoC) untuk menangani data di seluruh aplikasi.",
-      "Membuat backend service dengan Node.js untuk menjadi perantara antara aplikasi dan TMDB API, serta mengelola data pengguna.",
-      "Mengoptimalkan pemanggilan API dan caching gambar untuk memastikan pengalaman browsing yang lancar."
-    ]
+    solutions: [
+      "Used a modular Flutter widget architecture to build each UI component separately",
+      "Applied a state management solution (such as BLoC) to handle data across the app",
+      "Created a Node.js backend service to act as an intermediary between the app and TMDB API, as well as manage user data",
+      "Optimized API calls and image caching for a smooth browsing experience",
+    ],
   },
 
   "database-manager": {
-    "title": "Database Manager",
-    "subtitle": "Platform All-in-One untuk Manajemen Database dan Otomatisasi API",
-    "description": "Sebuah tool manajemen database berbasis web yang memungkinkan pengguna terhubung ke berbagai database (PostgreSQL, MongoDB, MySQL) dan secara otomatis membuat REST API yang aman untuk setiap koleksi/tabel, lengkap dengan sistem perizinan.",
-    "longDescription": "Proyek ini dikembangkan untuk menyederhanakan proses pengembangan backend dengan menyediakan satu platform terpusat. Pengguna tidak perlu lagi mengelola beberapa alat database yang berbeda atau menulis kode boilerplate untuk API CRUD. Dengan antarmuka yang intuitif, developer dapat mengelola data dan langsung mendapatkan endpoint API yang fungsional dan aman, sehingga mempercepat waktu pengembangan secara signifikan.",
-    "technologies": [
-      "SvelteKit",
-      "Go Fiber",
-      "MongoDB",
-      "Docker"
-    ],
-    "category": "Developer Tools",
-    "client": "Proyek Pribadi",
-    "duration": "3 Bulan",
-    "year": "2025",
-    "status": "in-progress",
-    "liveUrl": "",
-    "githubUrl": "https://github.com/Ahmadlazim-03/database-manager",
-    "images": [
+    title: "Database Manager",
+    subtitle: "All-in-One Platform for Database Management and API Automation",
+    description:
+      "A web-based database management tool that allows users to connect to various databases (PostgreSQL, MongoDB, MySQL) and automatically generate secure REST APIs for each collection/table, complete with a permission system.",
+    longDescription:
+      "This project was developed to simplify backend development by providing a centralized platform. Users no longer need to manage multiple database tools or write boilerplate code for CRUD APIs. With an intuitive interface, developers can manage data and instantly obtain functional and secure API endpoints, significantly speeding up development time.",
+    technologies: ["SvelteKit", "Go Fiber", "MongoDB", "Docker"],
+    category: "Developer Tools",
+    client: "Personal Project",
+    duration: "3 Months",
+    year: "2025",
+    status: "in-progress",
+    liveUrl: "",
+    githubUrl: "https://github.com/Ahmadlazim-03/database-manager",
+    images: [
       "/images/database1.png?height=600&width=800",
       "/images/database2.png?height=400&width=600",
       "/images/database3.png?height=400&width=600",
-      "/images/database4.png?height=400&width=600"
+      "/images/database4.png?height=400&width=600",
     ],
-    "features": [
-      "Koneksi Multi-Database (PostgreSQL, MongoDB, MySQL)",
-      "Antarmuka Grafis untuk Manajemen Data (CRUD)",
-      "Generator REST API Otomatis untuk Setiap Koleksi/Tabel",
-      "Sistem Perizinan (Permission) Berbasis Peran untuk API",
-      "Dokumentasi API yang Dihasilkan secara Otomatis",
-      "Manajemen Koneksi Database yang Aman"
+    features: [
+      "Multi-Database Connection (PostgreSQL, MongoDB, MySQL)",
+      "Graphical Interface for Data Management (CRUD)",
+      "Automatic REST API Generator for Each Collection/Table",
+      "Role-Based Permission System for APIs",
+      "Automatically Generated API Documentation",
+      "Secure Database Connection Management",
     ],
-    "challenges": [
-      "Membangun konektor yang andal untuk berbagai jenis database dengan struktur yang berbeda.",
-      "Merancang sistem yang aman untuk menyimpan kredensial database pengguna.",
-      "Membuat logika generator API yang dinamis dan dapat menangani berbagai skema data."
+    challenges: [
+      "Building reliable connectors for various database types with different structures",
+      "Designing a secure system for storing user database credentials",
+      "Creating a dynamic API generator logic capable of handling various data schemas",
     ],
-    "solutions": [
-      "Menggunakan driver resmi untuk setiap database dan membuat lapisan abstraksi (abstraction layer) di Go Fiber untuk menyeragamkan operasi.",
-      "Mengimplementasikan enkripsi at-rest untuk semua kredensial yang disimpan.",
-      "Membangun sistem template engine di backend untuk menghasilkan route dan controller API secara dinamis berdasarkan skema yang dibaca.",
-      "Menggunakan SvelteKit untuk menciptakan antarmuka pengguna yang reaktif dan cepat."
-    ]
+    solutions: [
+      "Used official drivers for each database and created an abstraction layer in Go Fiber to standardize operations",
+      "Implemented at-rest encryption for all stored credentials",
+      "Built a template engine in the backend to dynamically generate API routes and controllers based on read schemas",
+      "Used SvelteKit to create a reactive and fast user interface",
+    ],
   },
 
   "data-preprocessing-tools": {
-    "title": "Auto Pre-Processing Data Tools",
-    "subtitle": "Otomatisasi Alur Kerja Pra-Pemrosesan Data untuk Machine Learning",
-    "description": "Sebuah tools berbasis web yang dirancang untuk mengotomatiskan dan menyederhanakan alur pra-pemrosesan data untuk kebutuhan machine learning. Pengguna dapat mengunggah dataset dan menerapkan berbagai teknik pra-pemrosesan melalui antarmuka yang interaktif untuk menyiapkan data mentah agar siap digunakan dalam model machine learning.",
-    "longDescription": "Proyek ini dikembangkan untuk mengatasi salah satu bagian yang paling memakan waktu dalam machine learning, yaitu persiapan data. Tools ini menyediakan antarmuka tanpa kode (no-code) yang memandu pengguna melalui setiap langkah penting, mulai dari membersihkan data (menangani nilai yang hilang, outlier) hingga transformasi (normalisasi, encoding). Tujuannya adalah untuk memberdayakan data scientist dan analis agar dapat menyiapkan dataset berkualitas tinggi dengan lebih cepat dan efisien.",
-    "technologies": [
-      "SvelteKit",
-      "Go Fiber",
-      "Python",
-      "Pandas",
-      "Scikit-learn"
-    ],
-    "category": "Data Science & AI",
-    "client": "Proyek Pribadi",
-    "duration": "4 Bulan",
-    "year": "2025",
-    "status": "in-progress",
-    "liveUrl": "",
-    "githubUrl": "https://github.com/Ahmadlazim-03/auto-preprocessing-data-application",
-    "images": [
+    title: "Auto Pre-Processing Data Tools",
+    subtitle: "Automated Data Pre-Processing Workflow for Machine Learning",
+    description:
+      "A web-based tool designed to automate and simplify the data pre-processing workflow for machine learning needs. Users can upload datasets and apply various pre-processing techniques through an interactive interface to prepare raw data for use in machine learning models.",
+    longDescription:
+      "This project was developed to address one of the most time-consuming aspects of machine learning: data preparation. The tool provides a no-code interface that guides users through each critical step, from data cleaning (handling missing values, outliers) to transformation (normalization, encoding). The goal is to empower data scientists and analysts to prepare high-quality datasets faster and more efficiently.",
+    technologies: ["SvelteKit", "Go Fiber", "Python", "Pandas", "Scikit-learn"],
+    category: "Data Science & AI",
+    client: "Personal Project",
+    duration: "4 Months",
+    year: "2025",
+    status: "in-progress",
+    liveUrl: "",
+    githubUrl: "https://github.com/Ahmadlazim-03/auto-preprocessing-data-application",
+    images: [
       "/images/preprocessing1.png?height=600&width=800",
     ],
-    "features": [
-      "Upload Dataset dari Berbagai Format (CSV, Excel)",
-      "Penanganan Nilai Hilang (Missing Values) dengan Berbagai Metode",
-      "Transformasi dan Penskalaan Data (Normalisasi, Standarisasi)",
-      "Encoding Variabel Kategorikal (One-Hot, Label Encoding)",
-      "Visualisasi Data Interaktif untuk Eksplorasi",
-      "Pembagian Dataset (Data Latih & Uji)",
-      "Unduh Dataset Hasil Pra-Pemrosesan"
+    features: [
+      "Upload Datasets from Various Formats (CSV, Excel)",
+      "Handling Missing Values with Various Methods",
+      "Data Transformation and Scaling (Normalization, Standardization)",
+      "Categorical Variable Encoding (One-Hot, Label Encoding)",
+      "Interactive Data Visualization for Exploration",
+      "Dataset Splitting (Training & Testing Data)",
+      "Download Pre-Processed Dataset",
     ],
-    "challenges": [
-      "Mengelola dataset berukuran besar secara efisien di lingkungan web tanpa menyebabkan browser hang.",
-      "Mengintegrasikan backend Python untuk pemrosesan data dengan frontend SvelteKit secara real-time.",
-      "Menyediakan antarmuka yang intuitif bagi pengguna dengan berbagai tingkat keahlian teknis."
+    challenges: [
+      "Efficiently managing large datasets in a web environment without causing browser crashes",
+      "Integrating Python backend for data processing with SvelteKit frontend in real-time",
+      "Providing an intuitive interface for users with varying technical expertise",
     ],
-    "solutions": [
-      "Memproses data secara asynchronous di backend, sementara frontend hanya menampilkan status atau hasil proses.",
-      "Menggunakan WebSocket untuk komunikasi real-time antara frontend dan backend selama proses berjalan.",
-      "Merancang alur kerja berbasis wizard (langkah-demi-langkah) di SvelteKit untuk memandu pengguna melalui setiap tahap pra-pemrosesan."
-    ]
+    solutions: [
+      "Processed data asynchronously in the backend, with the frontend only displaying status or results",
+      "Used WebSocket for real-time communication between frontend and backend during processing",
+      "Designed a wizard-based (step-by-step) workflow in SvelteKit to guide users through each pre-processing stage",
+    ],
   },
 
   "sipandu": {
-    "title": "Si Pandu Application",
-    "subtitle": "Aplikasi Pelaporan Bencana Terpadu Berbasis Peta",
-    "description": "Sebuah aplikasi pelaporan masyarakat untuk suatu daerah, yang memungkinkan pengguna untuk melaporkan kejadian bencana alam secara langsung melalui antarmuka peta. Laporan yang masuk kemudian dapat dilihat dan diproses oleh pemerintah daerah untuk penanganan yang lebih cepat dan terkoordinasi.",
-    "longDescription": "Proyek ini dikembangkan untuk mempercepat alur komunikasi antara masyarakat dan pemerintah saat terjadi bencana. Dengan 'Si Pandu', warga dapat dengan mudah menandai lokasi kejadian di peta, mengunggah foto sebagai bukti, dan memantau status laporannya. Di sisi lain, pemerintah mendapatkan akses ke dasbor terpusat untuk memverifikasi dan mengelola semua laporan yang masuk, memungkinkan respons yang lebih terstruktur dan efisien terhadap keadaan darurat.",
-    "technologies": [
-      "Flutter",
-      "PocketBase",
-      "Android OS",
-      "Google Maps API"
-    ],
-    "category": "Mobile & Layanan Publik",
-    "client": "Proyek Konsep untuk Pemerintah Daerah",
-    "duration": "3 Bulan",
-    "year": "2025",
-    "status": "Selesai",
-    "liveUrl": "",
-    "githubUrl": "",
-    "images": [
+    title: "Si Pandu Application",
+    subtitle: "Integrated Map-Based Disaster Reporting Application",
+    description:
+      "A public reporting application for a specific region, allowing users to report natural disaster incidents directly through a map interface. Incoming reports can then be viewed and processed by local authorities for faster and more coordinated response.",
+    longDescription:
+      "This project was developed to accelerate communication between the public and the government during disasters. With 'Si Pandu', citizens can easily mark incident locations on a map, upload photos as evidence, and track the status of their reports. Meanwhile, the government gains access to a centralized dashboard to verify and manage all incoming reports, enabling a more structured and efficient response to emergencies.",
+    technologies: ["Flutter", "PocketBase", "Android OS", "Google Maps API"],
+    category: "Mobile & Public Services",
+    client: "Conceptual Project for Local Government",
+    duration: "3 Months",
+    year: "2025",
+    status: "Completed",
+    liveUrl: "",
+    githubUrl: "",
+    images: [
       "/images/sipandu1.png?height=600&width=800",
       "/images/sipandu2.png?height=600&width=800",
     ],
-    "features": [
-      "Pelaporan Bencana Berbasis Peta Interaktif",
-      "Kirim Laporan dengan Lampiran Foto dan Deskripsi",
-      "Pelacakan Status Laporan (Diterima, Diproses, Selesai)",
-      "Dasbor Admin untuk Pemerintah Memverifikasi & Mengelola Laporan",
-      "Notifikasi Real-Time untuk Laporan Baru dan Update Status",
-      "Riwayat Laporan Pengguna"
+    features: [
+      "Interactive Map-Based Disaster Reporting",
+      "Submit Reports with Photo Attachments and Descriptions",
+      "Report Status Tracking (Received, In Progress, Resolved)",
+      "Admin Dashboard for Government to Verify & Manage Reports",
+      "Real-Time Notifications for New Reports and Status Updates",
+      "User Report History",
     ],
-    "challenges": [
-      "Memastikan akurasi lokasi GPS yang dikirim oleh pengguna.",
-      "Membangun sistem notifikasi real-time yang andal untuk laporan darurat.",
-      "Merancang dua antarmuka yang berbeda namun terintegrasi: satu untuk pelapor (warga) dan satu untuk admin (pemerintah)."
+    challenges: [
+      "Ensuring the accuracy of GPS location data submitted by users",
+      "Building a reliable real-time notification system for emergency reports",
+      "Designing two distinct yet integrated interfaces: one for reporters (citizens) and one for admins (government)",
     ],
-    "solutions": [
-      "Mengintegrasikan Google Maps API untuk pengambilan dan validasi data geolokasi.",
-      "Menggunakan push notification services melalui PocketBase untuk mengirim peringatan instan ke dasbor admin.",
-      "Merancang alur pengguna (user flow) yang terpisah untuk setiap peran (user dan admin) di dalam aplikasi Flutter.",
-      "Menyediakan fitur upload foto sebagai bukti visual untuk membantu verifikasi laporan oleh pemerintah."
-    ]
-  }
+    solutions: [
+      "Integrated Google Maps API for geolocation data retrieval and validation",
+      "Used push notification services via PocketBase to send instant alerts to the admin dashboard",
+      "Designed separate user flows for each role (user and admin) within the Flutter application",
+      "Provided a photo upload feature as visual evidence to aid report verification by the government",
+    ],
+  },
 }
 
 export default function ProjectDetail({ params }: { params: { slug: string } }) {

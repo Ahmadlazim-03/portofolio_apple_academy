@@ -129,209 +129,210 @@ export default function LandingPage() {
   ]
 
   const projects: Project[] = [
-    {
-      name: "Go Explore",
-      tech: "Laravel, MySQL",
-      description: "Aplikasi Booking Destinasi Daerah Surabaya.",
-      features: [
-        "Responsive Design",
-        "Payment Gateway",
-        "Admin Panel",
-        "Booking & Ticketing System",
-        "Destination Search & Filter",
-        "Interactive Map & Navigation",
-        "User Reviews & Ratings",
-        "Popular Destination Recommendations",
-        "Notifications & Reminders",
-        "SEO Optimized"
-      ],
-      cta: "View Project",
-      image: "/images/goexplore1.png?height=200&width=300",
-      slug: "go-explore",
-      category: "web",
-      status: "completed",
-    },
-    {
-      name: "Go Orbit Company",
-      tech: "Cromwell Framework, Next.js, TypeScript, MySQL",
-      description: "Go-orbit menyediakan pelatihan, pembinaan, dan konsultasi yang disesuaikan untuk membangun keterampilan, meningkatkan kinerja, dan mencapai hasil terbaik.",
-      features: [
-        "Wawasan dan motivasi untuk tim",
-        "Pelatihan dan pembinaan",
-        "Konsultasi dan pendampingan",
-        "Pembelajaran berdasarkan pengalaman dan outbound",
-        "Pelatihan khusus bootcamp",
-        "Penyelenggara acara dan MICE"
-      ],
-      cta: "View Project",
-      popular: true,
-      image: "/images/goorbit1.png?height=200&width=300",
-      slug: "go-orbit",
-      category: "web",
-      status: "completed",
-    },
-    {
-      name: "Danusin",
-      tech: "Next.js, Typescript, Tailwind CSS, PocketBase",
-      description: "Aplikasi untuk membantu mentracking lokasi dana usaha",
-      "features": [
-        "Pelacakan Lokasi Penjual secara Real-Time di Peta",
-        "Dasbor Koordinator untuk Monitoring Tim",
-        "Manajemen Tim Penjual Terpusat (oleh Koordinator)",
-        "Update Status Aktivitas Penjual (Contoh: 'Berjualan', 'Istirahat')",
-        "Sistem Autentikasi Aman untuk Koordinator dan Penjual",
-        "Kontrol Akses Berbasis Peran (Koordinator vs. Penjual)"
-      ],
-      cta: "View Project",
-      image: "/images/danusin1.png?height=200&width=300",
-      slug: "danusin",
-      category: "web",
-      status: "completed",
-    },
-    {
-      name: "Company Profile HIMTI 2025",
-      tech: "Laravel, PHP, Tailwind CSS, MySQL",
-      description: "Aplikasi company profile Himpunan Mahasiswa Teknik Informatika 2025",
-      "features": [
-        "Halaman Utama dengan Profil Organisasi",
-        "Struktur Kepengurusan dan Detail Departemen",
-        "Agenda dan Rencana Program Kerja Tahunan",
-        "Portal Berita, Artikel, dan Pengumuman",
-        "Galeri Foto dan Video Dokumentasi Kegiatan",
-        "Formulir Pendaftaran dan Halaman Kontak",
-        "Sistem Manajemen Konten (CMS) untuk Admin",
-        "Integrasi Media Sosial Resmi HIMTI",
-        "Desain Modern yang Responsif di Semua Perangkat"
-      ],
-      cta: "View Project",
-      image: "/images/compro1.png?height=200&width=300",
-      slug: "compro",
-      category: "web",
-      status: "completed",
-    },
-    {
-      name: "Chat bot Whatsapp",
-      tech: "n8n, WAHA, VPS, Redis",
-      "description": "Sebuah chatbot WhatsApp cerdas yang dibangun untuk melampaui kemampuan standar Meta AI. Bot ini memiliki kapabilitas multimodal canggih, memungkinkannya untuk menganalisis dan memproses berbagai jenis media seperti gambar, video, dokumen, dan pesan suara langsung di dalam percakapan.",
-      "features": [
-        "Analisis Konten Gambar (Image Recognition)",
-        "Ringkasan dan Analisis Video",
-        "Ekstraksi Teks dari Dokumen (PDF, Docx)",
-        "Transkripsi Pesan Suara menjadi Teks",
-        "Kemampuan Percakapan Kontekstual",
-        "Integrasi Alur Kerja Otomatis (via n8n)",
-        "Dukungan Multimodal (Teks, Gambar, Suara, Dokumen)"
-      ],
-      cta: "View Project",
-      image: "/images/chatbot1.png?height=200&width=300",
-      slug: "chat-bot",
-      category: "ai",
-      status: "completed",
-    },
-    {
-      name: "Volunteer Vibe Application",
-      tech: "Android OS, Pocketbase, Flutter",
-      "description": "A mobile application designed to promote volunteerism among youth by connecting them with volunteer organizations through an engaging and accessible platform.",
-      "features": [
-        "Event Search by Geolocation",
-        "Gamification with Points and Badges",
-        "Social Media Sharing",
-        "Volunteer Hour Tracking"
-      ],
-      cta: "View Project",
-      image: "/images/volunteer1.png?height=200&width=300",
-      slug: "volunteervibe-app",
-      category: "mobile",
-      status: "completed"
-    },
-    {
-      name: "My Code Application",
-      tech: "Android OS, Pocketbase, Flutter",
-      "description": "Aplikasi mobile interaktif untuk belajar coding yang dirancang bagi pemula, mirip dengan W3Schools. Aplikasi ini menyediakan berbagai kursus terstruktur, latihan soal, dan elemen gamifikasi untuk membuat proses belajar menjadi efektif dan menyenangkan.",
-      "features": [
-        "Berbagai Kursus Pemrograman",
-        "Latihan Soal Interaktif",
-        "Fitur Gamifikasi (Poin & Lencana)",
-        "Code Editor dalam Aplikasi",
-        "Pelacakan Progres Belajar"
-      ],
-      cta: "View Project",
-      image: "/images/mycode1.png?height=200&width=300",
-      slug: "mycode-app",
-      category: "mobile",
-      status: "completed",
-    },
-    {
-      name: "Netflix Application",
-      tech: "Android OS, Pocketbase, Flutter",
-      "description": "Sebuah proyek kloning dari layanan streaming video populer, Netflix. Proyek ini mereplikasi pengalaman pengguna inti dalam menelusuri, mencari, dan menonton konten video, dibangun menggunakan Flutter untuk aplikasi mobile.",
-      "features": [
-        "Autentikasi Pengguna (Login & Register)",
-        "Beranda dengan Kategori Film",
-        "Fungsi Pencarian Konten",
-        "Halaman Detail Film (Sinopsis & Rating)",
-        "Pemutar Video Terintegrasi",
-        "Profil Pengguna dan 'My List'"
-      ],
-      cta: "View Project",
-      image: "/images/netflix1.png?height=200&width=300",
-      slug: "netflix-app",
-      category: "mobile",
-      status: "completed",
-    },
-    {
-      "name": "Si Pandu Application",
-        "tech": "Android OS, Pocketbase, Flutter",
-        "description": "Sebuah aplikasi pelaporan masyarakat untuk suatu daerah, yang memungkinkan pengguna untuk melaporkan kejadian bencana alam secara langsung melalui antarmuka peta. Laporan yang masuk kemudian dapat dilihat dan diproses oleh pemerintah daerah untuk penanganan yang lebih cepat dan terkoordinasi.",
-        "features": [
-          "Pelaporan Berbasis Peta (Map-Based Reporting)",
-          "Kirim Laporan dengan Foto & Deskripsi",
-          "Pelacakan Status Laporan (Diterima, Diproses, Selesai)",
-          "Dasbor Pemerintah untuk Verifikasi Laporan",
-          "Notifikasi Real-Time"
-        ],
-        "cta": "View Project",
-        "image": "/images/sipandu1.png?height=200&width=300",
-        "slug": "sipandu",
-        "category": "mobile",
-        "status": "completed"
-    },
-    {
-      name: "Database Manager",
-      tech: "SvelteKit, Go Fiber, MongoDB",
-      "description": "Sebuah tool manajemen database berbasis web yang memungkinkan pengguna untuk terhubung ke berbagai jenis database seperti PostgreSQL, MongoDB, dan MySQL. Platform ini menyediakan fitur untuk mengelola koleksi/tabel secara remote dan secara otomatis membuat REST API yang aman untuk setiap koleksi, lengkap dengan sistem perizinan.",
-      "features": [
-        "Koneksi Multi-Database (PostgreSQL, MongoDB, MySQL)",
-        "Manajemen Koleksi/Tabel secara Remote",
-        "Generator REST API Otomatis",
-        "Sistem Perizinan (Permission) untuk API",
-        "Antarmuka Grafis (GUI) untuk Data"
-      ],
-      cta: "In Development",
-      image: "/images/database1.png?height=200&width=300",
-      slug: "database-manager",
-      category: "incoming",
-      status: "in-progress",
-    },
-     {
-      "name": "Auto Pre-Processing Data Tools",
-      "tech": "SvelteKit, Go Fiber, Python",
-      "description": "Sebuah tools berbasis web yang dirancang untuk mengotomatiskan dan menyederhanakan alur pra-pemrosesan data untuk kebutuhan machine learning. Pengguna dapat mengunggah dataset dan menerapkan berbagai teknik pra-pemrosesan melalui antarmuka yang interaktif untuk menyiapkan data mentah agar siap digunakan dalam model machine learning.",
-      "features": [
-        "Upload Dataset (CSV, Excel, dll.)",
-        "Penanganan Nilai yang Hilang (Missing Values)",
-        "Transformasi Data (Normalisasi & Standarisasi)",
-        "Encoding Variabel Kategorikal",
-        "Visualisasi Data Interaktif",
-        "Unduh Dataset yang Telah Diproses"
-      ],
-      "cta": "In Development",
-      "image": "/images/preprocessing1.png?height=200&width=300",
-      "slug": "data-preprocessing-tools",
-      "category": "incoming",
-      "status": "in-progress"
-    },
+  {
+    name: "Go Explore",
+    tech: "Laravel, MySQL",
+    description: "A booking application for destinations in Surabaya.",
+    features: [
+      "Responsive Design",
+      "Payment Gateway",
+      "Admin Panel",
+      "Booking & Ticketing System",
+      "Destination Search & Filter",
+      "Interactive Map & Navigation",
+      "User Reviews & Ratings",
+      "Popular Destination Recommendations",
+      "Notifications & Reminders",
+      "SEO Optimized"
+    ],
+    cta: "View Project",
+    image: "/images/goexplore1.png?height=200&width=300",
+    slug: "go-explore",
+    category: "web",
+    status: "completed",
+  },
+  {
+    name: "Go Orbit Company",
+    tech: "Cromwell Framework, Next.js, TypeScript, MySQL",
+    description: "Go-orbit provides tailored training, coaching, and consulting to build skills, enhance performance, and achieve the best results.",
+    features: [
+      "Insights and motivation for teams",
+      "Training and coaching",
+      "Consulting and mentoring",
+      "Experience-based learning and outbound",
+      "Special bootcamp training",
+      "Event and MICE organizer"
+    ],
+    cta: "View Project",
+    popular: true,
+    image: "/images/goorbit1.png?height=200&width=300",
+    slug: "go-orbit",
+    category: "web",
+    status: "completed",
+  },
+  {
+    name: "Danusin",
+    tech: "Next.js, Typescript, Tailwind CSS, PocketBase",
+    description: "An application to help track business fund locations.",
+    features: [
+      "Real-Time Seller Location Tracking on Map",
+      "Coordinator Dashboard for Team Monitoring",
+      "Centralized Seller Team Management (by Coordinator)",
+      "Seller Activity Status Update (e.g., 'Selling', 'Resting')",
+      "Secure Authentication System for Coordinators and Sellers",
+      "Role-Based Access Control (Coordinator vs. Seller)"
+    ],
+    cta: "View Project",
+    image: "/images/danusin1.png?height=200&width=300",
+    slug: "danusin",
+    category: "web",
+    status: "completed",
+  },
+  {
+    name: "Company Profile HIMTI 2025",
+    tech: "Laravel, PHP, Tailwind CSS, MySQL",
+    description: "A company profile application for the Informatics Engineering Student Association 2025.",
+    features: [
+      "Homepage with Organization Profile",
+      "Organizational Structure and Department Details",
+      "Agenda and Annual Work Program Plans",
+      "News, Articles, and Announcements Portal",
+      "Photo and Video Activity Gallery",
+      "Registration Form and Contact Page",
+      "Content Management System (CMS) for Admin",
+      "Integration with Official Social Media Accounts",
+      "Modern Responsive Design on All Devices"
+    ],
+    cta: "View Project",
+    image: "/images/compro1.png?height=200&width=300",
+    slug: "compro",
+    category: "web",
+    status: "completed",
+  },
+  {
+    name: "Chat bot Whatsapp",
+    tech: "n8n, WAHA, VPS, Redis",
+    description: "An intelligent WhatsApp chatbot built to surpass the standard capabilities of Meta AI. This bot has advanced multimodal capabilities, allowing it to analyze and process various types of media such as images, videos, documents, and voice messages directly within the conversation.",
+    features: [
+      "Image Content Analysis (Image Recognition)",
+      "Video Summarization and Analysis",
+      "Text Extraction from Documents (PDF, Docx)",
+      "Voice Message Transcription to Text",
+      "Contextual Conversation Capability",
+      "Automated Workflow Integration (via n8n)",
+      "Multimodal Support (Text, Image, Voice, Document)"
+    ],
+    cta: "View Project",
+    image: "/images/chatbot1.png?height=200&width=300",
+    slug: "chat-bot",
+    category: "ai",
+    status: "completed",
+  },
+  {
+    name: "Volunteer Vibe Application",
+    tech: "Android OS, Pocketbase, Flutter",
+    description: "A mobile application designed to promote volunteerism among youth by connecting them with volunteer organizations through an engaging and accessible platform.",
+    features: [
+      "Event Search by Geolocation",
+      "Gamification with Points and Badges",
+      "Social Media Sharing",
+      "Volunteer Hour Tracking"
+    ],
+    cta: "View Project",
+    image: "/images/volunteer1.png?height=200&width=300",
+    slug: "volunteervibe-app",
+    category: "mobile",
+    status: "completed"
+  },
+  {
+    name: "My Code Application",
+    tech: "Android OS, Pocketbase, Flutter",
+    description: "An interactive mobile application for learning coding designed for beginners, similar to W3Schools. This app provides structured courses, exercises, and gamification elements to make the learning process effective and enjoyable.",
+    features: [
+      "Various Programming Courses",
+      "Interactive Exercises",
+      "Gamification Features (Points & Badges)",
+      "In-App Code Editor",
+      "Learning Progress Tracking"
+    ],
+    cta: "View Project",
+    image: "/images/mycode1.png?height=200&width=300",
+    slug: "mycode-app",
+    category: "mobile",
+    status: "completed",
+  },
+  {
+    name: "Netflix Application",
+    tech: "Android OS, Pocketbase, Flutter",
+    description: "A clone project of the popular video streaming service, Netflix. This project replicates the core user experience of browsing, searching, and watching video content, built using Flutter for mobile applications.",
+    features: [
+      "User Authentication (Login & Register)",
+      "Homepage with Movie Categories",
+      "Content Search Function",
+      "Movie Detail Page (Synopsis & Rating)",
+      "Integrated Video Player",
+      "User Profile and 'My List'"
+    ],
+    cta: "View Project",
+    image: "/images/netflix1.png?height=200&width=300",
+    slug: "netflix-app",
+    category: "mobile",
+    status: "completed",
+  },
+  {
+    name: "Si Pandu Application",
+    tech: "Android OS, Pocketbase, Flutter",
+    description: "A community reporting application for a region, allowing users to report natural disaster events directly through a map interface. Submitted reports can then be viewed and processed by local governments for faster and more coordinated responses.",
+    features: [
+      "Map-Based Reporting",
+      "Submit Reports with Photos & Descriptions",
+      "Report Status Tracking (Received, In Progress, Completed)",
+      "Government Dashboard for Report Verification",
+      "Real-Time Notifications"
+    ],
+    cta: "View Project",
+    image: "/images/sipandu1.png?height=200&width=300",
+    slug: "sipandu",
+    category: "mobile",
+    status: "completed"
+  },
+  {
+    name: "Database Manager",
+    tech: "SvelteKit, Go Fiber, MongoDB",
+    description: "A web-based database management tool that allows users to connect to multiple types of databases such as PostgreSQL, MongoDB, and MySQL. The platform provides features to remotely manage collections/tables and automatically generates secure REST APIs for each collection, complete with a permission system.",
+    features: [
+      "Multi-Database Connection (PostgreSQL, MongoDB, MySQL)",
+      "Remote Collection/Table Management",
+      "Automatic REST API Generator",
+      "Permission System for APIs",
+      "Graphical User Interface (GUI) for Data"
+    ],
+    cta: "In Development",
+    image: "/images/database1.png?height=200&width=300",
+    slug: "database-manager",
+    category: "incoming",
+    status: "in-progress",
+  },
+  {
+    name: "Auto Pre-Processing Data Tools",
+    tech: "SvelteKit, Go Fiber, Python",
+    description: "A web-based tool designed to automate and simplify the data preprocessing workflow for machine learning needs. Users can upload datasets and apply various preprocessing techniques through an interactive interface to prepare raw data for machine learning models.",
+    features: [
+      "Upload Dataset (CSV, Excel, etc.)",
+      "Handle Missing Values",
+      "Data Transformation (Normalization & Standardization)",
+      "Categorical Variable Encoding",
+      "Interactive Data Visualization",
+      "Download Preprocessed Dataset"
+    ],
+    cta: "In Development",
+    image: "/images/preprocessing1.png?height=200&width=300",
+    slug: "data-preprocessing-tools",
+    category: "incoming",
+    status: "in-progress"
+  },
   ]
+
 
   const categories = [
     { id: "all" as ProjectCategory, label: "All Projects", icon: <Filter className="size-4" /> },
@@ -520,8 +521,8 @@ export default function LandingPage() {
                 transition={{ delay: 0.6 }}
               >
                 {[
-                  { icon: <Check className="size-4 text-primary" />, text: "5+ Years Experience" },
-                  { icon: <Check className="size-4 text-primary" />, text: "50+ Projects" },
+                  { icon: <Check className="size-4 text-primary" />, text: "2+ Years Experience" },
+                  { icon: <Check className="size-4 text-primary" />, text: "10+ Projects" },
                   { icon: <Check className="size-4 text-primary" />, text: "Remote Available" },
                 ].map((item, index) => (
                   <motion.div key={index} className="flex items-center gap-1" whileHover={{ scale: 1.05 }}>
