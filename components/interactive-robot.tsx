@@ -14,13 +14,13 @@ interface Message {
   text: string
   sender: "user" | "robot"
   timestamp: Date
+  isLoading?: boolean // <-- tambahan untuk loading indicator
 }
 
 // Fungsi untuk memanggil Gemini API
 async function getAiResponse(prompt: string): Promise<string> {
-  // KOMENTAR: Ganti dengan API Key Anda dari Google AI Studio
   const API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY
-  const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+  const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=${API_KEY}`
 
   if (!API_KEY) {
     return "API Key for Gemini is not configured. Please set it up in your environment variables."
@@ -111,7 +111,15 @@ function ChatInterface({
                       : "bg-muted text-muted-foreground"
                   }`}
                 >
-                  {message.text}
+                  {message.isLoading ? (
+                    <span className="flex gap-1 animate-pulse">
+                      <span className="w-2 h-2 rounded-full bg-gray-400"></span>
+                      <span className="w-2 h-2 rounded-full bg-gray-400"></span>
+                      <span className="w-2 h-2 rounded-full bg-gray-400"></span>
+                    </span>
+                  ) : (
+                    message.text
+                  )}
                 </div>
               </div>
             ))}
@@ -160,13 +168,13 @@ export function InteractiveRobot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      text: "Hello! I'm your AI robot assistant. Ask me anything or try a command like !aboutme, !techsteck, !alamat.",
+      text: "Hello! I'm your AI robot assistant. Ask me anything or try a command like !aboutme, !techstack, !alamat.",
       sender: "robot",
       timestamp: new Date(),
     },
   ])
   const [isListening, setIsListening] = useState(false)
-  const [isSpeaking, setIsSpeaking] = useState(true) // Default to speak
+  const [isSpeaking, setIsSpeaking] = useState(true)
   const [recognition, setRecognition] = useState<any>(null)
   const [synthesis, setSynthesis] = useState<any>(null)
 
@@ -176,7 +184,7 @@ export function InteractiveRobot() {
       const recognitionInstance = new SpeechRecognition()
       recognitionInstance.continuous = false
       recognitionInstance.interimResults = false
-      recognitionInstance.lang = "id-ID" // Changed to Indonesian
+      recognitionInstance.lang = "id-ID"
       recognitionInstance.onresult = (event: any) => {
         handleSendMessage(event.results[0][0].transcript)
         setIsListening(false)
@@ -201,10 +209,19 @@ export function InteractiveRobot() {
       }
       setMessages((prev) => [...prev, userMessage])
 
+      // Tambah pesan loading
+      const loadingMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        text: "",
+        sender: "robot",
+        timestamp: new Date(),
+        isLoading: true,
+      }
+      setMessages((prev) => [...prev, loadingMessage])
+
       let robotResponseText = ""
       const command = text.trim().toLowerCase()
 
-      // KOMENTAR: Logika untuk menangani command khusus
       switch (command) {
         case "!alamat":
           robotResponseText = "Perak, Jombang, Jawa Timur"
@@ -216,21 +233,19 @@ export function InteractiveRobot() {
           robotResponseText = "Laravel, Next.js, Flutter"
           break
         default:
-          // KOMENTAR: Jika bukan command, panggil AI
           robotResponseText = await getAiResponse(text)
           break
       }
 
-      const robotMessage: Message = {
-        id: (Date.now() + 1).toString(),
-        text: robotResponseText,
-        sender: "robot",
-        timestamp: new Date(),
-      }
-      setMessages((prev) => [...prev, robotMessage])
+      // Hapus loading message dan ganti dengan response AI
+      setMessages((prev) =>
+        prev.map((m) =>
+          m.isLoading ? { ...m, isLoading: false, text: robotResponseText } : m
+        )
+      )
 
       if (synthesis && isSpeaking) {
-        const utterance = new SpeechSynthesisUtterance(robotMessage.text)
+        const utterance = new SpeechSynthesisUtterance(robotResponseText)
         utterance.lang = "id-ID"
         synthesis.speak(utterance)
       }
